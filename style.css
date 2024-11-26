@@ -217,7 +217,7 @@ html {
     .navigation__drop__label:hover {
       cursor: pointer; }
   .navigation__links {
-    margin-top: 9rem;
+    margin-top: 7rem;
     display: flex;
     align-self: center;
     flex-direction: column;
