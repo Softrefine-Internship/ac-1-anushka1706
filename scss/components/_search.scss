@@ -8,14 +8,17 @@
   border-radius: 120px;
   justify-content: center;
   @include response(s-2-tab-port) {
-    margin-left: 0rem;
     margin-right: 0;
+    width:30rem;
   }
   @include response(s-phone) {
-    width: 25rem;
+    width: 25rem;  
   }
   @include response(laptop) {
     margin-right: 0rem;
+  }
+  @include response(s-4-phone) {
+    width: 19rem;
   }
   &__input {
     width: 90%;
@@ -42,6 +45,7 @@
       width: 100%;
       outline: 3px solid $violet-light;
       padding-left: 3rem;
+      padding-right: 1rem;
       @include response(s-3-phone) {
         width: 90%;
         outline: none;

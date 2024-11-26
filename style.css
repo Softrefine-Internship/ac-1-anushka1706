@@ -178,7 +178,7 @@ html {
       gap: 0rem; } }
   .header .logo-name {
     margin-left: 15rem; }
-    @media (max-width: 436px) {
+    @media (max-width: 450px) {
       .header .logo-name {
         margin-left: 9.5rem; } }
 
@@ -190,14 +190,14 @@ html {
   position: fixed;
   top: 0;
   left: 0; }
-  @media (max-width: 436px) {
+  @media (max-width: 450px) {
     .navigation {
       padding: 1.5rem; } }
   .navigation__drop {
     align-self: center;
     margin-left: 2rem;
     padding-top: 1rem; }
-    @media (max-width: 436px) {
+    @media (max-width: 450px) {
       .navigation__drop {
         margin-left: 1.5rem; } }
     .navigation__drop__checkbox {
@@ -244,7 +244,7 @@ html {
       border-radius: 50%;
       padding: 1.3rem;
       align-items: center; }
-      @media (max-width: 436px) {
+      @media (max-width: 450px) {
         .navigation__links__li {
           padding: 1.4rem; } }
       .navigation__links__li .nav-icons {
@@ -663,14 +663,17 @@ html {
   justify-content: center; }
   @media (max-width: 945px) {
     .search {
-      margin-left: 0rem;
-      margin-right: 0; } }
+      margin-right: 0;
+      width: 30rem; } }
   @media (max-width: 650px) {
     .search {
       width: 25rem; } }
   @media (max-width: 1355px) {
     .search {
       margin-right: 0rem; } }
+  @media (max-width: 450px) {
+    .search {
+      width: 19rem; } }
   .search__input {
     width: 90%;
     background-color: #ffffff;
@@ -694,7 +697,8 @@ html {
     .search__input:focus {
       width: 100%;
       outline: 3px solid #e9e7fd;
-      padding-left: 3rem; }
+      padding-left: 3rem;
+      padding-right: 1rem; }
       @media (max-width: 483px) {
         .search__input:focus {
           width: 90%;
@@ -728,7 +732,7 @@ main {
     margin-left: 8rem;
     border-radius: 50px;
     margin-top: 9rem;
-    padding-bottom: 0;
+    padding-bottom: 4rem;
     padding-top: 4rem;
     padding-left: 7rem;
     margin-left: 11rem;
@@ -757,10 +761,10 @@ main {
     @media (max-width: 760px) {
       main .dashboard-content {
         margin-top: 7.7 rem; } }
-    @media (max-width: 436px) {
+    @media (max-width: 450px) {
       main .dashboard-content {
         margin-left: 7rem; } }
-    @media (max-width: 436px) {
+    @media (max-width: 450px) {
       main .dashboard-content {
         padding-left: 8rem;
         padding-right: 5rem; } }

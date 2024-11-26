@@ -102,7 +102,11 @@
       @content;
     }
   } @else if $device == s-4-phone {
-    @media (max-width: 436px) {
+    @media (max-width: 450px) {
+      @content;
+    }
+  } @else if $device == s-5-phone {
+    @media (max-width: 370px) {
       @content;
     }
   } @else if $device == tab-port {
