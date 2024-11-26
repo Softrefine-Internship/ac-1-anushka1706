@@ -16,7 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid $light-grey;
+    border-bottom: 1px solid $hr-grey-dark;
     padding-left: 2rem;
     padding-right: 2rem;
     text-transform: capitalize;
@@ -57,9 +57,9 @@
       height: 6rem;
       width: 6rem;
       border-radius: 50%;
-        // @include response(s-tab-port){
-        //   width: 60%;
-        // }
+      // @include response(s-tab-port){
+      //   width: 60%;
+      // }
     }
     .users-chats {
       position: relative;

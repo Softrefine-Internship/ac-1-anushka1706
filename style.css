@@ -47,7 +47,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #878787;
+    border-bottom: 1px solid #cdccccc2;
     padding-left: 2rem;
     padding-right: 2rem;
     text-transform: capitalize;
