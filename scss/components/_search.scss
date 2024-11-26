@@ -9,15 +9,11 @@
   justify-content: center;
   @include response(s-2-tab-port) {
     margin-left: 0rem;
-    width: 3rem;
     margin-right: 0;
   }
   @include response(s-phone) {
     width: 25rem;
   }
-  // @include response(s-tab-port){
-  //   margin-right: 0;
-  // }
   @include response(laptop) {
     margin-right: 0rem;
   }
@@ -38,7 +34,7 @@
       transform: translateX(12%);
       text-align: left;
       text-transform: capitalize;
-      @include response(s-3-phone) {
+      @include response(s-phone) {
         font-size: 1.5rem;
       }
     }

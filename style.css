@@ -664,7 +664,6 @@ html {
   @media (max-width: 945px) {
     .search {
       margin-left: 0rem;
-      width: 3rem;
       margin-right: 0; } }
   @media (max-width: 650px) {
     .search {
@@ -689,7 +688,7 @@ html {
       transform: translateX(12%);
       text-align: left;
       text-transform: capitalize; }
-      @media (max-width: 483px) {
+      @media (max-width: 650px) {
         .search__input::-webkit-input-placeholder {
           font-size: 1.5rem; } }
     .search__input:focus {
