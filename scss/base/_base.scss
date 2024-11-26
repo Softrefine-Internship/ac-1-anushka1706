@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  @include response(tab-port) {
+    font-size: 45.7%;
+  }
+  @include response(s-laptop) {
+    font-size: 55%;
+  }
+  @include response(phone) {
+    font-size: 43.5%;
+  }
+  @include response(s-phone) {
+    font-size: 37.5%;
+  }
+  @include response(s-3-phone) {
+    font-size: 31%;
+  }
+  body {
+    font-family: "DM Sans";
+    background-color: $bg-primary;
+  }
+}

@@ -3,7 +3,455 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Projects - Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <div class="navigation__drop">
+          <input
+            type="checkbox"
+            class="navigation__drop__checkbox"
+            id="nav-opts"
+          />
+          <label class="navigation__drop__label" for="nav-opts">
+            <span class="navigation__drop__label__span outline-1"></span>
+            <span class="navigation__drop__label__span outline-2"></span>
+            <span class="navigation__drop__label__span outline-3"></span>
+          </label>
+        </div>
+        <ul class="navigation__links">
+          <li class="navigation__links__li active-link">
+            <a href="#" class="a_links"
+              ><ion-icon
+                name="home-outline"
+                class="home-icon nav-icons"
+              ></ion-icon
+            ></a>
+          </li>
+          <li class="navigation__links__li">
+            <a href="#" class="a_links"
+              ><ion-icon
+                name="person-circle-outline"
+                class="user-icon nav-icons"
+              ></ion-icon
+            ></a>
+          </li>
+          <li class="navigation__links__li">
+            <a href="#" class="a__links"
+              ><ion-icon
+                name="chatbox-outline"
+                class="message-icon nav-icons"
+              ></ion-icon
+            ></a>
+          </li>
+          <li class="navigation__links__li">
+            <a href="#" class="a__links"
+              ><ion-icon
+                name="calendar-outline"
+                class="calender-icon nav-icons"
+              ></ion-icon
+            ></a>
+          </li>
+          <li class="navigation__links__li">
+            <a href="#" class="a__links"
+              ><ion-icon
+                name="time-outline"
+                class="time-icon nav-icons"
+              ></ion-icon
+            ></a>
+          </li>
+          <li class="navigation__links__li">
+            <a href="#" class="a__links"
+              ><ion-icon
+                name="settings-outline"
+                class="setting-icon nav-icons"
+              ></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <span class="logo-name">portfolio</span>
+      <div class="search">
+        <input class="search__input" type="text" placeholder="search" />
+        <ion-icon name="search-outline" class="search-icon"></ion-icon>
+      </div>
+      <section class="top">
+        <div class="top__options">
+          <button class="top-add-btn">
+            <div class="add-div add-div-1"></div>
+            <div class="add-div add-div-2"></div>
+          </button>
+          <ion-icon
+            name="notifications-outline"
+            class="notification-icon"
+          ></ion-icon>
+          <div class="top__options__user">
+            <img
+              src="img/client-4.jpg"
+              alt="user-profile"
+              class="top-user-img"
+            />
+            <span class="user-name">hira r</span>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <div class="dashboard-content">
+        <div class="dashboard-heading">
+          <h3 class="heading-primary-medium">projects</h3>
+          <span class="date heading-primary-small">july,2020</span>
+        </div>
+        <section class="summary">
+          <div class="summary__info">
+            <div class="summary__info__state in-progress">
+              <span class="number heading-primary-small">45</span>
+              <span class="status heading-medium">in progress</span>
+            </div>
+            <span class="dot-unfilled"></span>
+            <div class="summary__info__state in-progress">
+              <span class="number heading-primary-small">12</span>
+              <span class="status heading-medium">in progress</span>
+            </div>
+            <span class="dot-unfilled"></span>
+            <div class="summary__info__state upcomming">
+              <span class="number heading-primary-small">10</span>
+              <span class="status heading-medium">up comming</span>
+            </div>
+            <span class="dot-unfilled"></span>
+            <div class="summary__info__state total-projects">
+              <span class="number heading-primary-small">67</span>
+              <span class="status heading-medium">total projects</span>
+            </div>
+          </div>
+          <div class="summary__options">
+            <ion-icon name="menu-outline" class="menu-stripe"></ion-icon>
+            <ion-icon name="grid-outline" class="menu-icon"></ion-icon>
+          </div>
+        </section>
+        <section class="progress-domain">
+          <div class="progress-domain__wrapper">
+            <div class="progress-domain__cards card-prototyping">
+              <div class="card-top">
+                <span class="card-top__time text-medium">july 2,2020</span>
+                <div class="card-top__opts">
+                  <span class="dots"></span>
+                  <span class="dots"></span>
+                </div>
+              </div>
+              <div class="card-details">
+                <h4 class="card-details__name heading-medium">web designing</h4>
+                <span class="card-detail__category text-medium"
+                  >prototyping</span
+                >
+                <div class="card-details__progress">
+                  <span class="bar-heading heading-medium">progress</span>
+                  <progress
+                    class="progress-bar bar-prototype"
+                    value="90"
+                    max="100"
+                  ></progress>
+                  <label
+                    class="progress-label heading-medium"
+                    for="progress-bar"
+                    >90%</label
+                  >
+                </div>
+              </div>
+              <hr class="hr-grey" />
+              <div class="card-users">
+                <div class="card-users__clients">
+                  <img
+                    src="img/client-1.jpg"
+                    class="users-img"
+                    alt="web-designing-client"
+                  />
+                  <img
+                    src="img/client-2.jpg"
+                    class="users-img"
+                    alt="webdesigning-user"
+                  />
+                  <button class="add-btn">
+                    <div class="add-div add-div-1"></div>
+                    <div class="add-div add-div-2"></div>
+                  </button>
+                </div>
+                <div class="time-left">
+                  <span class="time-left__span time-prototype text-medium"
+                    >2 days left</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="progress-domain__cards card-shopping">
+            <div class="card-top">
+              <span class="card-top__time text-small">july 2,2020</span>
+              <div class="card-top__opts">
+                <span class="dots"></span>
+                <span class="dots"></span>
+              </div>
+            </div>
+            <div class="card-details">
+              <h4 class="card-details__name heading-medium">mobile app</h4>
+              <span class="card-detail__category text-medium">shopping</span>
+              <div class="card-details__progress">
+                <span class="bar-heading heading-medium">progress</span>
+                <progress
+                  class="progress-bar bar-shopping"
+                  value="30"
+                  max="100"
+                ></progress>
+                <label class="progress-label heading-medium" for="progress-bar"
+                  >30%</label
+                >
+              </div>
+            </div>
+            <hr class="hr-white" />
+            <div class="card-users">
+              <div class="card-users__clients">
+                <img
+                  src="img/client-1.jpg"
+                  class="users-img"
+                  alt="web-designing-client"
+                />
+                <img
+                  src="img/client-2.jpg"
+                  class="users-img"
+                  alt="webdesigning-user"
+                />
+                <button class="add-btn">
+                  <div class="add-div add-div-1"></div>
+                  <div class="add-div add-div-2"></div>
+                </button>
+              </div>
+              <div class="time-left">
+                <span class="time-left__span time-shopping text-medium"
+                  >2 days left</span
+                >
+              </div>
+            </div>
+            <span class="card-stack stack-1"></span>
+            <span class="card-stack stack-2"></span>
+          </div>
+          <div class="progress-domain__cards card-medical">
+            <div class="card-top">
+              <span class="card-top__time text-small">july 2,2020</span>
+              <div class="card-top__opts">
+                <span class="dots"></span>
+                <span class="dots"></span>
+              </div>
+            </div>
+            <div class="card-details">
+              <h4 class="card-details__name heading-medium">dashboard</h4>
+              <span class="card-detail__category text-medium">medical</span>
+              <div class="card-details__progress">
+                <span class="bar-heading heading-medium">progress</span>
+                <progress
+                  class="progress-bar bar-medical"
+                  value="50"
+                  max="100"
+                ></progress>
+                <label class="progress-label heading-medium" for="progress-bar"
+                  >50%</label
+                >
+              </div>
+            </div>
+            <hr class="hr-white" />
+            <div class="card-users">
+              <div class="card-users__clients">
+                <img
+                  src="img/client-1.jpg"
+                  class="users-img"
+                  alt="web-designing-client"
+                />
+                <img
+                  src="img/client-2.jpg"
+                  class="users-img"
+                  alt="webdesigning-user"
+                />
+                <button class="add-btn">
+                  <div class="add-div add-div-1"></div>
+                  <div class="add-div add-div-2"></div>
+                </button>
+              </div>
+              <div class="time-left">
+                <span class="time-left__span time-medical text-medium"
+                  >2 weeks left</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="progress-domain__cards card-wireframing">
+            <div class="card-top">
+              <span class="card-top__time text-small">july 15,2020</span>
+              <div class="card-top__opts">
+                <span class="dots"></span>
+                <span class="dots"></span>
+              </div>
+            </div>
+            <div class="card-details">
+              <h4 class="card-details__name heading-medium">web designing</h4>
+              <span class="card-detail__category text-medium">wireframing</span>
+              <div class="card-details__progress">
+                <span class="bar-heading heading-medium">progress</span>
+                <progress
+                  class="progress-bar bar-wireframing"
+                  value="20"
+                  max="100"
+                ></progress>
+                <label class="progress-label heading-medium" for="progress-bar"
+                  >20%</label
+                >
+              </div>
+            </div>
+            <hr class="hr-white" />
+            <div class="card-users">
+              <div class="card-users__clients">
+                <img
+                  src="img/client-1.jpg"
+                  class="users-img"
+                  alt="web-designing-client"
+                />
+                <img
+                  src="img/client-2.jpg"
+                  class="users-img"
+                  alt="webdesigning-user"
+                />
+                <button class="add-btn">
+                  <div class="add-div add-div-1"></div>
+                  <div class="add-div add-div-2"></div>
+                </button>
+              </div>
+              <div class="time-left">
+                <span class="time-left__span time-wireframing text-medium"
+                  >3 weeks left</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="client-section">
+        <div class="client-heading">
+          <h3 class="heading-primary-medium">client messages</h3>
+          <div class="client-heading__actions">
+            <ion-icon
+              name="search-outline"
+              class="search-icon-client"
+            ></ion-icon>
+            <div class="client-heading__actions__dot">
+              <span class="client-dots"></span>
+              <span class="client-dots"></span>
+            </div>
+          </div>
+        </div>
+        <section class="client-messages">
+          <div class="users-chats grid-col-2-chat">
+            <ion-icon name="star-outline" class="star-icon"></ion-icon>
+            <img
+              src="img/client-5.jpg"
+              class="client-messages__img"
+              alt="client-profile"
+            />
+            <div class="message-content">
+              <h4 class="heading-medium">david</h4>
+              <p class="message-content__paragraph text-medium">
+                hey tell me about progress of project? waiting for your response
+              </p>
+              <span class="message-date text-medium">25 july</span>
+            </div>
+          </div>
+          <div class="users-chats grid-col-2-chat">
+            <ion-icon name="star-outline" class="star-icon"></ion-icon>
+            <img
+              src="img/client-6.jpg"
+              class="client-messages__img"
+              alt="client-profile"
+            />
+            <div class="message-content">
+              <h4 class="heading-medium">david</h4>
+              <p class="message-content__paragraph text-medium">
+                hey tell me about progress of project? waiting for your response
+              </p>
+              <span class="message-date text-medium">21 july</span>
+            </div>
+          </div>
+          <div class="users-chats grid-col-2-chat">
+            <ion-icon
+              name="star-outline"
+              class="star-icon start-filled"
+            ></ion-icon>
+            <img
+              src="img/client-5.jpg"
+              class="client-messages__img"
+              alt="client-profile"
+            />
+            <div class="message-content">
+              <h4 class="heading-medium">stephanie</h4>
+              <p class="message-content__paragraph text-medium">
+                i got your first assignment . it was uite good👌you can start
+                work on next assignment
+              </p>
+              <span class="message-date text-medium">19 july</span>
+            </div>
+          </div>
+          <div class="users-chats grid-col-2-chat">
+            <ion-icon
+              name="star-outline"
+              class="star-icon start-filled"
+            ></ion-icon>
+            <img
+              src="img/client-7.jpg"
+              class="client-messages__img"
+              alt="client-profile"
+            />
+            <div class="message-content">
+              <h4 class="heading-medium">stephanie</h4>
+              <p class="message-content__paragraph text-medium">
+                i got your first assignment . it was uite good👌you can start
+                work on next assignment
+              </p>
+              <span class="message-date text-medium">19 july</span>
+            </div>
+          </div>
+          <div class="users-chats grid-col-2-chat">
+            <ion-icon
+              name="star-outline"
+              class="star-icon start-filled"
+            ></ion-icon>
+            <img
+              src="img/client-7.jpg"
+              class="client-messages__img"
+              alt="client-profile"
+            />
+            <div class="message-content">
+              <h4 class="heading-medium">stephanie</h4>
+              <p class="message-content__paragraph text-medium">
+                i got your first assignment . it was uite good👌you can start
+                work on next assignment
+              </p>
+              <span class="message-date text-medium">19 july</span>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

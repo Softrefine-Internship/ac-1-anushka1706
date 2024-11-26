@@ -1,0 +1,133 @@
+@mixin cards($color) {
+  background-color: $color;
+  border-radius: 40px;
+  @include response(s-phone) {
+    border-radius: 25px;
+  }
+}
+@mixin add-button($color, $stroke-color, $height) {
+  background-color: $color;
+  height: $height;
+  width: $height;
+  border-radius: 50%;
+  text-align: center;
+  border: none;
+  transition: background-color 0.5s;
+  .add-div {
+    background-color: $stroke-color;
+    height: 0.2rem;
+    width: $height/3;
+    border-radius: 3px;
+    margin: 0 auto;
+  }
+  .add-div-1 {
+    transform: rotate(90deg);
+  }
+  .add-div-2 {
+    transform: translateY(-90%);
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: rgba($color, 0.6);
+  }
+}
+@mixin bar-color($class) {
+  @if $class == bar-prototype {
+    .#{$class} {
+      &::-webkit-progress-value {
+        background-color: $progress-blue;
+      }
+    }
+  }
+  @if $class == bar-medical {
+    .#{$class} {
+      &::-webkit-progress-value {
+        background-color: $progress-green;
+      }
+    }
+  }
+  @if $class == bar-wireframing {
+    .#{$class} {
+      &::-webkit-progress-value {
+        background-color: $progress-pink;
+      }
+    }
+  }
+  @if $class == bar-shopping {
+    .#{$class} {
+      &::-webkit-progress-value {
+        background-color: $progress-orange;
+      }
+    }
+  }
+}
+@mixin card-color-text($class) {
+  @if $class == time-prototype {
+    .#{$class} {
+      color: $progress-blue;
+    }
+  }
+  @if $class == time-medical {
+    .#{$class} {
+      color: $progress-green;
+    }
+  }
+  @if $class == time-wireframing {
+    .#{$class} {
+      color: $progress-pink;
+    }
+  }
+  @if $class == time-shopping {
+    .#{$class} {
+      color: $progress-orange;
+    }
+  }
+}
+
+@mixin response($device) {
+  @if $device == phone {
+    @media (max-width: 760px) {
+      @content;
+    }
+  } @else if $device == s-phone {
+    @media (max-width: 650px) {
+      @content;
+    }
+  } @else if $device == s-2-phone {
+    @media (max-width: 500px) {
+      @content;
+    }
+  } @else if $device == s-3-phone {
+    @media (max-width: 483px) {
+      @content;
+    }
+  } @else if $device == s-4-phone {
+    @media (max-width: 436px) {
+      @content;
+    }
+  } @else if $device == tab-port {
+    @media (max-width: 1190px) {
+      @content;
+    }
+  } @else if $device == s-tab-port {
+    @media (max-width: 1111px) {
+      @content;
+    }
+  } @else if $device == s-tab-3-port {
+    @media (max-width: 860px) {
+      @content;
+    }
+  } @else if $device == s-2-tab-port {
+    @media (max-width: 945px) {
+      @content;
+    }
+  } @else if $device == laptop {
+    @media (max-width: 1355px) {
+      @content;
+    }
+  } @else if $device == s-laptop {
+    @media (max-width: 1270px) {
+      @content;
+    }
+  }
+}

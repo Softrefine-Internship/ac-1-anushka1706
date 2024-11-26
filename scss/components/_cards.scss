@@ -1,0 +1,194 @@
+.progress-domain {
+  padding-top: 4rem;
+  display: grid;
+  column-gap: 7rem;
+  row-gap: 7rem;
+  @include response(laptop) {
+    column-gap: 6rem;
+    row-gap: 6rem;
+  }
+  @include response(tab-port) {
+    grid-template-columns: 1fr;
+  }
+  grid-template-columns: repeat(2, 1fr);
+  &__cards {
+    padding-bottom: 2rem;
+    position: relative;
+    .card-top {
+      display: flex;
+      padding: 3rem 3rem 0rem 3rem;
+      justify-content: space-between;
+      @include response(s-tab-3-port) {
+        padding-right: 4rem;
+        padding-left: 4rem;
+      }
+      &__opts {
+        .dots {
+          display: block;
+          margin-bottom: 0.1rem;
+          height: 0.5rem;
+          width: 0.5rem;
+          background-color: black;
+          border-radius: 50%;
+          @include response(s-tab-3-port) {
+            margin-bottom: 0.3rem;
+          }
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      &__time {
+        font-weight: 600;
+        color: $dark-grey-2;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+.card-details {
+  margin-top: 3rem;
+  text-align: center;
+  &__progress {
+    text-align: start;
+    padding: 0rem 3rem;
+    .progress-label {
+      display: block;
+      font-weight: 700;
+      text-align: end;
+      margin-top: 1rem;
+    }
+    .bar-heading {
+      display: block;
+      font-weight: 700;
+      margin-top: 2rem;
+    }
+    .progress-bar {
+      width: 100%;
+      margin-top: 1rem;
+      border-radius: 20px;
+      border: none;
+      height: 0.6rem;
+      &::-webkit-progress-bar {
+        border-radius: 20px;
+        background-color: #f3f3f3;
+      }
+      &::-webkit-progress-value {
+        border-radius: 20px;
+      }
+    }
+  }
+  &__name {
+    text-transform: capitalize;
+  }
+}
+.hr-grey {
+  width: 100%;
+  border: 1px solid rgba($hr-grey, 0.35);
+  margin-top: 1rem;
+}
+.hr-white {
+  width: 100%;
+  border: 1px solid rgba($white, 0.4);
+  margin-top: 1rem;
+}
+.card-users {
+  display: flex;
+  padding: 0rem 3rem;
+  padding-top: 2rem;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  @include response(laptop) {
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 0.2rem;
+  }
+  &__clients {
+    .users-img {
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      &:not(:first-child) {
+        margin-left: -1rem;
+      }
+    }
+    .add-btn {
+      margin-left: 0.4rem;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .time-left {
+    display: inline-block;
+    text-align: end;
+    font-weight: 650;
+    padding: 0.7rem 2rem;
+    border-radius: 25px;
+    font-size: 0.8rem;
+    background-color: $white;
+  }
+  @include card-color-text(time-prototype);
+  @include card-color-text(time-medical);
+  @include card-color-text(time-wireframing);
+  @include card-color-text(time-shopping);
+}
+@include bar-color(bar-prototype);
+@include bar-color(bar-medical);
+@include bar-color(bar-shopping);
+@include bar-color(bar-wireframing);
+
+.card-prototyping {
+  .add-btn {
+    @include add-button($progress-blue, $white, 3rem);
+  }
+  .time-left {
+    background-color: $light-blue;
+  }
+}
+.card-shopping {
+  .add-btn {
+    @include add-button($progress-orange, $white, 3rem);
+  }
+}
+.card-medical {
+  .add-btn {
+    @include add-button($progress-green, $white, 3rem);
+  }
+}
+.card-wireframing {
+  .add-btn {
+    @include add-button($progress-pink, $white, 3rem);
+  }
+}
+.card-stack {
+  position: absolute;
+  display: block;
+  background-color: $shopping;
+  height: 0.5rem;
+  border-radius: 10px;
+}
+.stack-2 {
+  width: 65%;
+  bottom: -9%;
+  left: 19%;
+}
+.stack-1 {
+  width: 75%;
+  bottom: -5%;
+  left: 14%;
+}
+.card-prototyping {
+  @include cards($white);
+}
+.card-medical {
+  @include cards($medical);
+}
+.card-shopping {
+  @include cards($shopping);
+}
+.card-wireframing {
+  @include cards($wireframing);
+}

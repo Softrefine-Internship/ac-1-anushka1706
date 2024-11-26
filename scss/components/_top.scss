@@ -1,0 +1,56 @@
+.top {
+  &__options {
+    display: flex;
+    align-self: end;
+    align-items: center;
+    gap: 2rem;
+    @include response(s-laptop) {
+      gap: 1rem;
+    }
+    .top-user-img {
+      height: 4.5rem;
+      width: 4.5rem;
+      border-radius: 50%;
+    }
+    .top-add-btn {
+      @include add-button($active-nav, $white, 3.2rem);
+    }
+    .notification-icon {
+      font-size: 3.2rem;
+      transition: color 0.5s;
+      position: relative;
+      &::after {
+        height: 0.7rem;
+        content: "";
+        width: 0.7rem;
+        border-radius: 50%;
+        background-color: red;
+        position: absolute;
+        right: 15%;
+        top: 10%;
+      }
+      &:hover {
+        color: $light-grey;
+        cursor: pointer;
+      }
+    }
+    &__user {
+      border-left: 1px solid $dark-grey-1;
+      padding-left: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      @include response(s-laptop) {
+        gap: 0.5rem;
+      }
+      @include response(s-2-tab-port) {
+        margin-right: 2rem;
+      }
+      .user-name {
+        text-transform: capitalize;
+        font-weight: 800;
+        font-size: 2.3rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.search {
+  width: 45rem;
+  height: 3.5rem;
+  margin-right: 16rem;
+  position: relative;
+  align-items: center;
+  display: flex;
+  border-radius: 120px;
+  justify-content: center;
+  @include response(s-2-tab-port) {
+    margin-left: 0rem;
+    width: 3rem;
+    margin-right: 0;
+  }
+  @include response(s-phone) {
+    width: 25rem;
+  }
+  // @include response(s-tab-port){
+  //   margin-right: 0;
+  // }
+  @include response(laptop) {
+    margin-right: 0rem;
+  }
+  &__input {
+    width: 90%;
+    background-color: $white;
+    border-radius: 120px;
+    border: none;
+    align-self: center;
+    overflow: visible;
+    height: 4.5rem;
+    transition: width 0.5s;
+    @include response(s-2-tab-port) {
+      padding-left: 1.5rem;
+    }
+    &::-webkit-input-placeholder {
+      color: $light-grey;
+      transform: translateX(12%);
+      text-align: left;
+      text-transform: capitalize;
+      @include response(s-3-phone) {
+        font-size: 1.5rem;
+      }
+    }
+    &:focus {
+      width: 100%;
+      outline: 3px solid $violet-light;
+      padding-left: 3rem;
+      @include response(s-3-phone) {
+        width: 90%;
+        outline: none;
+      }
+      &::-webkit-input-placeholder {
+        transform: translateX(5%);
+      }
+    }
+    &:focus + .search-icon {
+      opacity: 0;
+    }
+  }
+  .search-icon {
+    position: absolute;
+    font-size: 2.5rem;
+    color: $light-grey;
+    opacity: 1;
+    transition: opacity 0.2s;
+    top: 5px;
+    left: 8%;
+    border-radius: 100px;
+    margin-right: -1rem;
+    @include response(s-3-phone) {
+      font-size: 2rem;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.summary {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include response(tab-port) {
+    margin-top: 4rem;
+  }
+  &__options {
+    display: flex;
+    gap: 2rem;
+    @include response(s-tab-port) {
+      gap: 1.5rem;
+    }
+    .menu-icon,
+    .menu-stripe {
+      font-size: 2.3rem;
+      --ionicon-stroke-width: 45px;
+      transition: color 0.4s;
+      &:hover {
+        color: $light-grey;
+        cursor: pointer;
+      }
+    }
+  }
+  &__info {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    @include response(s-2-tab-port) {
+      gap: 3rem;
+    }
+    @include response(laptop) {
+      gap: 2rem;
+    }
+    @include response(s-laptop) {
+      gap: 3rem;
+    }
+    @include response(s-phone) {
+      gap: 2rem;
+    }
+    @include response(s-2-phone) {
+      gap: 1.5rem;
+    }
+    @include response(s-3-phone) {
+      gap: 1rem;
+    }
+    &__state {
+      .number {
+        display: block;
+        margin-bottom: 0.3rem;
+      }
+      .number {
+        font-weight: 800;
+      }
+      .status {
+        text-transform: capitalize;
+        color: $dark-grey-2;
+        font-weight: 450;
+      }
+    }
+    .dot-unfilled {
+      height: 0.5rem;
+      width: 0.5rem;
+      border-radius: 50%;
+      border: 1px solid black;
+      display: block;
+      align-self: flex-end;
+      margin-bottom: 0.6rem;
+    }
+  }
+}
