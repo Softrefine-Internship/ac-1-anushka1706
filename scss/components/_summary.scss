@@ -40,10 +40,10 @@
       gap: 2rem;
     }
     @include response(s-2-phone) {
-      gap: 1.5rem;
+      gap: 2.5rem;
     }
     @include response(s-3-phone) {
-      gap: 1rem;
+      gap: 1.7rem;
     }
     &__state {
       .number {
@@ -56,7 +56,7 @@
       .status {
         text-transform: capitalize;
         color: $dark-grey-2;
-        font-weight: 450; 
+        font-weight: 450;
       }
     }
     .dot-unfilled {

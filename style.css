@@ -362,10 +362,10 @@ html {
         gap: 2rem; } }
     @media (max-width: 500px) {
       .summary__info {
-        gap: 1.5rem; } }
+        gap: 2.5rem; } }
     @media (max-width: 483px) {
       .summary__info {
-        gap: 1rem; } }
+        gap: 1.7rem; } }
     .summary__info__state .number {
       display: block;
       margin-bottom: 0.3rem; }
