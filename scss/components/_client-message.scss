@@ -84,8 +84,8 @@
       }
       .message-content {
         display: flex;
-        flex-direction: column;
-        width: 90%;
+        flex-direction: column; 
+        width: 100%;
         h4 {
           text-transform: capitalize;
           margin-bottom: 1rem;

@@ -59,7 +59,7 @@ html {
       font-size: 2.5rem;
       transition: color 0.4s; }
       .client-section .client-heading .search-icon-client:hover {
-        color: #878787;
+        color: #777777;
         cursor: pointer; }
     .client-section .client-heading__actions {
       display: flex;
@@ -103,14 +103,14 @@ html {
       .client-section .client-messages .users-chats .message-content {
         display: flex;
         flex-direction: column;
-        width: 90%; }
+        width: 100%; }
         .client-section .client-messages .users-chats .message-content h4 {
           text-transform: capitalize;
           margin-bottom: 1rem; }
         .client-section .client-messages .users-chats .message-content .message-date {
           text-align: right;
           margin-top: 0.8rem;
-          color: #878787;
+          color: #777777;
           text-transform: capitalize;
           font-size: 1.4rem;
           font-weight: 500; }
@@ -302,7 +302,7 @@ html {
       right: 15%;
       top: 10%; }
     .top__options .notification-icon:hover {
-      color: #878787;
+      color: #777777;
       cursor: pointer; }
   .top__options__user {
     border-left: 1px solid #444545;
@@ -342,7 +342,7 @@ html {
       transition: color 0.4s; }
       .summary__options .menu-icon:hover,
       .summary__options .menu-stripe:hover {
-        color: #878787;
+        color: #777777;
         cursor: pointer; }
   .summary__info {
     display: flex;
@@ -370,7 +370,7 @@ html {
       display: block;
       margin-bottom: 0.3rem; }
     .summary__info__state .number {
-      font-weight: 800; }
+      font-weight: 900; }
     .summary__info__state .status {
       text-transform: capitalize;
       color: #4f4f4f;
@@ -453,6 +453,9 @@ html {
         border-radius: 20px; }
   .card-details__name {
     text-transform: capitalize; }
+  .card-details__category {
+    display: block;
+    margin-top: 0.3rem; }
 
 .hr-grey {
   width: 100%;
@@ -687,7 +690,7 @@ html {
       .search__input {
         padding-left: 1.5rem; } }
     .search__input::-webkit-input-placeholder {
-      color: #878787;
+      color: #777777;
       transform: translateX(12%);
       text-align: left;
       text-transform: capitalize; }
@@ -710,7 +713,7 @@ html {
   .search .search-icon {
     position: absolute;
     font-size: 2.5rem;
-    color: #878787;
+    color: #777777;
     opacity: 1;
     transition: opacity 0.2s;
     top: 5px;

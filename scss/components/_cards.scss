@@ -81,6 +81,10 @@
   &__name {
     text-transform: capitalize;
   }
+  &__category {
+    display: block;
+    margin-top: 0.3rem;
+  }
 }
 .hr-grey {
   width: 100%;
