@@ -24,7 +24,10 @@
   .logo-name {
     margin-left: 15rem;
     @include response(s-4-phone) {
-      margin-left: 9.5rem;
+      margin-left: 11rem;
+    }
+    @include response(s-5-phone) {
+      margin-left: 9.8rem;
     }
   }
 }

@@ -133,6 +133,9 @@
     border-radius: 25px;
     font-size: 0.8rem;
     background-color: $white;
+    &__span {
+      font-weight: 700;
+    }
   }
   @include card-color-text(time-prototype);
   @include card-color-text(time-medical);
@@ -151,6 +154,7 @@
   .time-left {
     background-color: $light-blue;
   }
+  box-shadow: 0 30px 50px 2px rgba(225, 223, 223, 0.499);
 }
 .card-shopping {
   .add-btn {

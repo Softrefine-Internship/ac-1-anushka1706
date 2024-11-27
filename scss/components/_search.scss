@@ -9,10 +9,11 @@
   justify-content: center;
   @include response(s-2-tab-port) {
     margin-right: 0;
-    width:30rem;
+    width: 30rem;
   }
   @include response(s-phone) {
-    width: 25rem;  
+    width: 25rem;
+    gap:0rem;           
   }
   @include response(laptop) {
     margin-right: 0rem;
@@ -26,7 +27,6 @@
     border-radius: 120px;
     border: none;
     align-self: center;
-    overflow: visible;
     height: 4.5rem;
     transition: width 0.5s;
     @include response(s-2-tab-port) {

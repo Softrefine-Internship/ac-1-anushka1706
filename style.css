@@ -31,7 +31,7 @@ html {
 
 .client-section {
   padding-top: 3rem;
-  margin-top: 9.5rem; }
+  margin-top: 10.8rem; }
   @media (max-width: 1270px) {
     .client-section {
       margin-top: 8rem; } }
@@ -48,10 +48,10 @@ html {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #cdccccc2;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     text-transform: capitalize;
-    padding-bottom: 3.5rem; }
+    padding-bottom: 2rem; }
     @media (max-width: 945px) {
       .client-section .client-heading {
         padding-bottom: 1.5rem; } }
@@ -74,60 +74,60 @@ html {
         width: 0.6rem;
         background-color: black;
         border-radius: 50%; }
-  .client-section .client-messages {
-    margin-top: 1rem; }
-    .client-section .client-messages__img {
-      height: 6rem;
-      width: 6rem;
-      border-radius: 50%; }
-    .client-section .client-messages .users-chats {
-      position: relative;
-      align-items: center;
-      transition: transform 0.4s;
-      padding: 2.5rem;
-      border-bottom: 1px solid #cdccccc2; }
-      @media (max-width: 1111px) {
-        .client-section .client-messages .users-chats {
-          margin-top: 1rem;
-          background-color: #ffffff;
-          border-radius: 20px;
-          grid-template-columns: 10rem auto;
-          border: none; } }
-      .client-section .client-messages .users-chats .star-icon {
-        position: absolute;
-        top: 20%;
-        fill: black;
-        right: 5%;
-        transition: color 0.4s;
-        font-size: 2rem; }
-      .client-section .client-messages .users-chats .message-content {
-        display: flex;
-        flex-direction: column;
-        width: 100%; }
-        .client-section .client-messages .users-chats .message-content h4 {
-          text-transform: capitalize;
-          margin-bottom: 1rem; }
-        .client-section .client-messages .users-chats .message-content .message-date {
-          text-align: right;
-          margin-top: 0.8rem;
-          color: #777777;
-          text-transform: capitalize;
-          font-size: 1.4rem;
-          font-weight: 500; }
-      .client-section .client-messages .users-chats:hover {
-        transform: translateX(-12px) scale(1.02);
+  .client-section .client-messages__img {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%; }
+  .client-section .client-messages .users-chats {
+    position: relative;
+    align-items: center;
+    transition: transform 0.4s;
+    padding: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-bottom: 1px solid #cdccccc2; }
+    @media (max-width: 1111px) {
+      .client-section .client-messages .users-chats {
+        margin-top: 1rem;
         background-color: #ffffff;
         border-radius: 20px;
-        cursor: pointer;
-        border-bottom: none; }
-        @media (max-width: 1111px) {
-          .client-section .client-messages .users-chats:hover {
-            transform: none;
-            background-color: none;
-            border: none;
-            cursor: pointer; } }
-        .client-section .client-messages .users-chats:hover .star-icon {
-          color: #dcdc21; }
+        grid-template-columns: 10rem auto;
+        border: none; } }
+    .client-section .client-messages .users-chats .star-icon {
+      position: absolute;
+      top: 20%;
+      fill: black;
+      right: 5%;
+      transition: color 0.4s;
+      font-size: 2rem; }
+    .client-section .client-messages .users-chats .message-content {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+      .client-section .client-messages .users-chats .message-content h4 {
+        text-transform: capitalize;
+        margin-bottom: 1rem; }
+      .client-section .client-messages .users-chats .message-content .message-date {
+        text-align: right;
+        margin-top: 0.8rem;
+        color: #777777;
+        text-transform: capitalize;
+        font-size: 1.4rem;
+        font-weight: 500; }
+    .client-section .client-messages .users-chats:hover {
+      transform: translateX(-12px) scale(1.02);
+      background-color: #ffffff;
+      border-radius: 20px;
+      cursor: pointer;
+      border-bottom: none; }
+      @media (max-width: 1111px) {
+        .client-section .client-messages .users-chats:hover {
+          transform: none;
+          background-color: none;
+          border: none;
+          cursor: pointer; } }
+      .client-section .client-messages .users-chats:hover .star-icon {
+        color: #dcdc21; }
 
 .heading-primary-medium {
   font-size: 2.5rem; }
@@ -180,7 +180,10 @@ html {
     margin-left: 15rem; }
     @media (max-width: 450px) {
       .header .logo-name {
-        margin-left: 9.5rem; } }
+        margin-left: 11rem; } }
+    @media (max-width: 370px) {
+      .header .logo-name {
+        margin-left: 9.8rem; } }
 
 .navigation {
   padding: 2rem;
@@ -196,7 +199,8 @@ html {
   .navigation__drop {
     align-self: center;
     margin-left: 2rem;
-    padding-top: 1rem; }
+    padding-top: 1rem;
+    text-align: center; }
     @media (max-width: 450px) {
       .navigation__drop {
         margin-left: 1.5rem; } }
@@ -215,7 +219,8 @@ html {
     .navigation__drop__label .outline-3 {
       margin-left: 0.8rem; }
     .navigation__drop__label:hover {
-      cursor: pointer; }
+      cursor: pointer;
+      background-color: #ffffff; }
   .navigation__links {
     margin-top: 7rem;
     display: flex;
@@ -231,10 +236,6 @@ html {
     @media (max-width: 1111px) {
       .navigation__links {
         margin-top: 3rem; } }
-    .navigation__links .active-link {
-      background-color: #151522; }
-      .navigation__links .active-link .nav-icons {
-        color: white; }
     .navigation__links__li {
       display: flex;
       justify-content: center;
@@ -246,14 +247,25 @@ html {
       align-items: center; }
       @media (max-width: 450px) {
         .navigation__links__li {
-          padding: 1.4rem; } }
+          padding: 1.5rem; } }
       .navigation__links__li .nav-icons {
         font-size: 3rem;
         color: #94969a; }
-      .navigation__links__li:hover {
-        background-color: #151522; }
-        .navigation__links__li:hover .nav-icons {
+      .navigation__links__li:hover .nav-icons {
+        color: white; }
+      .navigation__links__li .active-link {
+        background-color: #151522;
+        padding: 1.5rem;
+        border-radius: 50px; }
+        .navigation__links__li .active-link .nav-icons {
           color: white; }
+      .navigation__links__li .a__links {
+        padding: 1.5rem;
+        border-radius: 50px;
+        transition: background-color 0.4s; }
+        .navigation__links__li .a__links:hover {
+          background-color: #151522;
+          cursor: pointer; }
 
 .top__options {
   display: flex;
@@ -305,7 +317,7 @@ html {
       color: #777777;
       cursor: pointer; }
   .top__options__user {
-    border-left: 1px solid #444545;
+    border-left: 1px solid #d5d5d5;
     padding-left: 2rem;
     display: flex;
     align-items: center;
@@ -322,7 +334,7 @@ html {
       font-size: 2.3rem; }
 
 .summary {
-  margin-top: 5rem;
+  margin-top: 3.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between; }
@@ -351,7 +363,7 @@ html {
     @media (max-width: 945px) {
       .summary__info {
         gap: 3rem; } }
-    @media (max-width: 1355px) {
+    @media (max-width: 1360px) {
       .summary__info {
         gap: 2rem; } }
     @media (max-width: 1270px) {
@@ -390,7 +402,7 @@ html {
   column-gap: 7rem;
   row-gap: 7rem;
   grid-template-columns: repeat(2, 1fr); }
-  @media (max-width: 1355px) {
+  @media (max-width: 1360px) {
     .progress-domain {
       column-gap: 6rem;
       row-gap: 6rem; } }
@@ -475,7 +487,7 @@ html {
   gap: 1rem;
   flex-wrap: wrap;
   margin-top: 1rem; }
-  @media (max-width: 1355px) {
+  @media (max-width: 1360px) {
     .card-users {
       justify-content: center;
       padding-top: 1rem;
@@ -498,6 +510,8 @@ html {
     border-radius: 25px;
     font-size: 0.8rem;
     background-color: #ffffff; }
+    .card-users .time-left__span {
+      font-weight: 700; }
   .card-users .time-prototype {
     color: #2cc8ff; }
   .card-users .time-medical {
@@ -519,30 +533,31 @@ html {
 .bar-wireframing::-webkit-progress-value {
   background-color: #ff72ac; }
 
-.card-prototyping .add-btn {
-  background-color: #2cc8ff;
-  height: 3rem;
-  width: 3rem;
-  border-radius: 50%;
-  text-align: center;
-  border: none;
-  transition: background-color 0.5s; }
-  .card-prototyping .add-btn .add-div {
-    background-color: #ffffff;
-    height: 0.2rem;
-    width: 1rem;
-    border-radius: 3px;
-    margin: 0 auto; }
-  .card-prototyping .add-btn .add-div-1 {
-    transform: rotate(90deg); }
-  .card-prototyping .add-btn .add-div-2 {
-    transform: translateY(-90%); }
-  .card-prototyping .add-btn:hover {
-    cursor: pointer;
-    background-color: rgba(44, 200, 255, 0.6); }
-
-.card-prototyping .time-left {
-  background-color: #dbf6fd; }
+.card-prototyping {
+  box-shadow: 0 30px 50px 2px rgba(225, 223, 223, 0.499); }
+  .card-prototyping .add-btn {
+    background-color: #2cc8ff;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    transition: background-color 0.5s; }
+    .card-prototyping .add-btn .add-div {
+      background-color: #ffffff;
+      height: 0.2rem;
+      width: 1rem;
+      border-radius: 3px;
+      margin: 0 auto; }
+    .card-prototyping .add-btn .add-div-1 {
+      transform: rotate(90deg); }
+    .card-prototyping .add-btn .add-div-2 {
+      transform: translateY(-90%); }
+    .card-prototyping .add-btn:hover {
+      cursor: pointer;
+      background-color: rgba(44, 200, 255, 0.6); }
+  .card-prototyping .time-left {
+    background-color: #dbf6fd; }
 
 .card-shopping .add-btn {
   background-color: #ff723a;
@@ -630,30 +645,18 @@ html {
 .card-prototyping {
   background-color: #ffffff;
   border-radius: 40px; }
-  @media (max-width: 650px) {
-    .card-prototyping {
-      border-radius: 25px; } }
 
 .card-medical {
   background-color: #b4f1ce;
   border-radius: 40px; }
-  @media (max-width: 650px) {
-    .card-medical {
-      border-radius: 25px; } }
 
 .card-shopping {
   background-color: #fde5cc;
   border-radius: 40px; }
-  @media (max-width: 650px) {
-    .card-shopping {
-      border-radius: 25px; } }
 
 .card-wireframing {
   background-color: #ffd3e2;
   border-radius: 40px; }
-  @media (max-width: 650px) {
-    .card-wireframing {
-      border-radius: 25px; } }
 
 .search {
   width: 45rem;
@@ -670,8 +673,9 @@ html {
       width: 30rem; } }
   @media (max-width: 650px) {
     .search {
-      width: 25rem; } }
-  @media (max-width: 1355px) {
+      width: 25rem;
+      gap: 0rem; } }
+  @media (max-width: 1360px) {
     .search {
       margin-right: 0rem; } }
   @media (max-width: 450px) {
@@ -683,7 +687,6 @@ html {
     border-radius: 120px;
     border: none;
     align-self: center;
-    overflow: visible;
     height: 4.5rem;
     transition: width 0.5s; }
     @media (max-width: 945px) {
@@ -731,27 +734,24 @@ main {
     main {
       grid-template-columns: 1fr; } }
   main .dashboard-content {
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     margin-left: 8rem;
     border-radius: 50px;
     margin-top: 9rem;
-    padding-bottom: 4rem;
-    padding-top: 4rem;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
     padding-left: 7rem;
     gap: 7rem;
-    margin-left: 11rem;
+    margin-left: 10rem;
     padding-right: 7rem; }
-    @media (max-width: 1355px) {
+    @media (max-width: 1360px) {
       main .dashboard-content {
-        padding-left: 6rem;
-        padding-right: 6rem;
-        gap: 6rem;
-        padding-top: 3rem;
-        padding-bottom: 3rem; } }
+        padding: 4rem 6rem;
+        gap: 6rem; } }
     @media (max-width: 1270px) {
       main .dashboard-content {
         margin-top: 8rem;
-        padding: 2rem 5rem;
+        padding: 3rem 5rem;
         gap: 5rem; } }
     @media (max-width: 1190px) {
       main .dashboard-content {
@@ -766,14 +766,18 @@ main {
     @media (max-width: 760px) {
       main .dashboard-content {
         margin-top: 7.7 rem; } }
+    @media (max-width: 483px) {
+      main .dashboard-content {
+        margin-left: 10rem;
+        border-radius: 30px; } }
     @media (max-width: 450px) {
       main .dashboard-content {
-        margin-left: 7rem; } }
-    @media (max-width: 450px) {
-      main .dashboard-content {
-        padding-left: 5rem;
-        padding-right: 5rem;
+        padding: 2rem 4rem;
         gap: 5rem; } }
+    @media (max-width: 370px) {
+      main .dashboard-content {
+        padding: 2rem 2rem;
+        gap: 2rem; } }
     main .dashboard-content .dashboard-heading {
       display: flex;
       justify-content: space-between;
