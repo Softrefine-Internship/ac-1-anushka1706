@@ -13,7 +13,7 @@
   }
   @include response(s-phone) {
     width: 25rem;
-    gap:0rem;           
+    gap: 0rem;
   }
   @include response(laptop) {
     margin-right: 0rem;
@@ -25,6 +25,7 @@
     width: 90%;
     background-color: $white;
     border-radius: 120px;
+    padding-left: 3rem;
     border: none;
     align-self: center;
     height: 4.5rem;
@@ -33,13 +34,16 @@
       padding-left: 1.5rem;
     }
     &::-webkit-input-placeholder {
-      color: $light-grey;
-      transform: translateX(12%);
+      color: $light-grey;    
+      transform: translateX(5%);
       text-align: left;
       text-transform: capitalize;
       @include response(s-phone) {
         font-size: 1.5rem;
       }
+    }
+    &:not(:placeholder-shown) + .search-icon {
+      opacity: 0;
     }
     &:focus {
       width: 100%;
