@@ -1,5 +1,5 @@
 .summary {
-  margin-top: 3.5rem;  
+  margin-top: 3.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,14 +36,17 @@
     @include response(s-laptop) {
       gap: 3rem;
     }
-    @include response(s-phone) {
+    @include response(s-tab-port) {
+      gap: 5rem;
+    }
+    @include response(s-tab-3-port) {
+      gap: 3.5rem;
+    }
+    @include response(phone) {
       gap: 2rem;
     }
     @include response(s-2-phone) {
-      gap: 2.5rem;
-    }
-    @include response(s-3-phone) {
-      gap: 1.7rem;
+      gap: 1rem;
     }
     &__state {
       .number {

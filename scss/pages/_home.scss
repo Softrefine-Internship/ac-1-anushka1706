@@ -21,7 +21,7 @@ main {
     }
     @include response(s-laptop) {
       margin-top: 8rem;
-      padding: 3rem 5rem;
+      padding: 4rem 5rem;
       gap: 5rem;
     }
     @include response(tab-port) {

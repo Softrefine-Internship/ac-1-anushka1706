@@ -18,8 +18,14 @@
   @include response(laptop) {
     margin-right: 0rem;
   }
+  @include response(s-laptop) {
+   transform: translateX(-90px);    
+  }
   @include response(s-4-phone) {
     width: 19rem;
+  }
+  @include response(tab-port) {
+    transform: translateX(0px);
   }
   &__input {
     width: 90%;
@@ -34,8 +40,8 @@
       padding-left: 1.5rem;
     }
     &::-webkit-input-placeholder {
-      color: $light-grey;    
-      transform: translateX(5%);
+      color: $light-grey;
+      transform: translateX(10%);
       text-align: left;
       text-transform: capitalize;
       @include response(s-phone) {
