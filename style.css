@@ -738,19 +738,21 @@ main {
     padding-bottom: 4rem;
     padding-top: 4rem;
     padding-left: 7rem;
+    gap: 7rem;
     margin-left: 11rem;
     padding-right: 7rem; }
     @media (max-width: 1355px) {
       main .dashboard-content {
         padding-left: 6rem;
         padding-right: 6rem;
-        padding-top: 3rem; } }
+        gap: 6rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem; } }
     @media (max-width: 1270px) {
       main .dashboard-content {
         margin-top: 8rem;
-        padding-left: 5rem;
-        padding-right: 3rem;
-        padding-top: 2rem; } }
+        padding: 2rem 5rem;
+        gap: 5rem; } }
     @media (max-width: 1190px) {
       main .dashboard-content {
         margin-top: 6.5rem; } }
@@ -763,14 +765,15 @@ main {
         padding-right: 5rem; } }
     @media (max-width: 760px) {
       main .dashboard-content {
-        margin-top: 7.7 rem; } }
+        margin-top: 7.7 rem; } }
     @media (max-width: 450px) {
       main .dashboard-content {
         margin-left: 7rem; } }
     @media (max-width: 450px) {
       main .dashboard-content {
-        padding-left: 8rem;
-        padding-right: 5rem; } }
+        padding-left: 5rem;
+        padding-right: 5rem;
+        gap: 5rem; } }
     main .dashboard-content .dashboard-heading {
       display: flex;
       justify-content: space-between;

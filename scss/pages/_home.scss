@@ -1,7 +1,7 @@
 main {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  @include response(s-tab-port){
+  @include response(s-tab-port) {
     grid-template-columns: 1fr;
   }
   .dashboard-content {
@@ -12,39 +12,41 @@ main {
     padding-bottom: 4rem;
     padding-top: 4rem;
     padding-left: 7rem;
+    gap: 7rem;
     margin-left: 11rem;
     padding-right: 7rem;
-    @include response(laptop){
+    @include response(laptop) {
       padding-left: 6rem;
       padding-right: 6rem;
+      gap: 6rem;
       padding-top: 3rem;
+      padding-bottom: 3rem;
     }
-    @include response(s-laptop){
+    @include response(s-laptop) {
       margin-top: 8rem;
-      padding-left: 5rem;
-      padding-right: 3rem;
-      padding-top: 2rem;
+      padding: 2rem 5rem;
+      gap: 5rem;
     }
-    @include response(tab-port){
+    @include response(tab-port) {
       margin-top: 6.5rem;
-    };
-    @include response(s-tab-port){
+    }
+    @include response(s-tab-port) {
       margin-top: 7rem;
-    };
-    @include response(s-2-tab-port){
+    }
+    @include response(s-2-tab-port) {
       margin-top: 6.5rem;
       padding-right: 5rem;
-    };
-    @include response(phone){
-      margin-top: 7.7
-      rem;
-    };
+    }
+    @include response(phone) {
+      margin-top: 7.7 rem;
+    }
     @include response(s-4-phone) {
       margin-left: 7rem;
     }
     @include response(s-4-phone) {
-      padding-left: 8rem;
+      padding-left: 5rem;
       padding-right: 5rem;
+      gap: 5rem;
     }
     .dashboard-heading {
       display: flex;
