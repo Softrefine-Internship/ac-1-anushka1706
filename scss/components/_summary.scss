@@ -1,10 +1,25 @@
 .summary {
-  margin-top: 3.5rem;
+  margin-top: 4rem;  
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-left: 7rem;
+  padding-right: 7rem;
   @include response(tab-port) {
-    margin-top: 4rem;
+    margin-top: 3.5rem;
+  }  
+  @include response(s-laptop) {
+    padding: 0rem 5rem;
+    padding-bottom: 1rem;
+  }
+  @include response(s-2-tab-port) {
+    padding-right: 5rem;
+  }
+  @include response(s-4-phone) {  
+    padding: 2rem 4rem;
+  }
+  @include response(s-5-phone) {
+    padding: 2rem 2rem;
   }
   &__options {
     display: flex;
@@ -34,21 +49,27 @@
       gap: 2rem;
     }
     @include response(s-laptop) {
-      gap: 3rem;
+      gap: 2rem;
     }
     @include response(s-tab-port) {
       gap: 5rem;
     }
     @include response(s-tab-3-port) {
-      gap: 3.5rem;
+      gap: 3rem;   
     }
     @include response(phone) {
       gap: 2rem;
     }
     @include response(s-2-phone) {
+      gap: 3rem;
+    }
+    @include response(s-3-phone) {
+      gap: 2rem;
+    }
+    @include response(s-4-phone) {
       gap: 1rem;
     }
-    &__state {
+    &__state { 
       .number {
         display: block;
         margin-bottom: 0.3rem;

@@ -9,19 +9,14 @@ main {
     margin-left: 8rem;
     border-radius: 50px;
     margin-top: 9rem;
-    padding-bottom: 5rem;
-    padding-top: 5rem;
-    padding-left: 7rem;
     gap: 7rem;
     margin-left: 10rem;
-    padding-right: 7rem;
+    padding-bottom: 3rem;
     @include response(laptop) {
-      padding: 4rem 6rem;
       gap: 6rem;
     }
     @include response(s-laptop) {
-      margin-top: 8rem;
-      padding: 4rem 5rem;
+      margin-top: 8rem;  
       gap: 5rem;
     }
     @include response(tab-port) {
@@ -32,7 +27,6 @@ main {
     }
     @include response(s-2-tab-port) {
       margin-top: 6.5rem;
-      padding-right: 5rem;
     }
     @include response(phone) {
       margin-top: 7.7 rem;
@@ -42,20 +36,32 @@ main {
       border-radius: 30px;
     }
     @include response(s-4-phone) {
-      padding: 2rem 4rem;
       gap: 5rem;
     }
     @include response(s-5-phone) {
-      padding: 2rem 2rem;
       gap: 2rem;
     }
     .dashboard-heading {
       display: flex;
       justify-content: space-between;
       text-transform: capitalize;
-      .date {
-        font-weight: 700;
-        text-transform: capitalize;
+      padding-top: 5rem;
+      padding-left: 7rem;
+      padding-right: 7rem;
+      font-weight: 700;
+      text-transform: capitalize;
+      @include response(s-laptop) {
+        padding: 4rem 5rem;
+        padding-bottom: 1rem;
+      }
+      @include response(s-2-tab-port) {
+        padding-right: 5rem;
+      }
+      @include response(s-4-phone) {
+        padding: 2rem 4rem;
+      }
+      @include response(s-5-phone) {
+        padding: 2rem 2rem;
       }
     }
   }
