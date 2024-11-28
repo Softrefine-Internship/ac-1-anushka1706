@@ -16,7 +16,7 @@ main {
       gap: 6rem;
     }
     @include response(s-laptop) {
-      margin-top: 8rem;  
+      margin-top: 8rem;
       gap: 5rem;
     }
     @include response(tab-port) {
@@ -63,6 +63,21 @@ main {
       @include response(s-5-phone) {
         padding: 2rem 2rem;
       }
+    }
+  }
+  .client-section {
+    padding-top: 3rem;
+    margin-top: 10.8rem;
+    @include response(s-laptop) {
+      margin-top: 8rem;
+    }
+    @include response(tab-port) {
+      margin-top: 6.5rem;
+    }
+    @include response(s-tab-port) {
+      margin-top: 2rem;
+      margin-left: 10rem;
+      padding-right: 2rem;
     }
   }
 }
