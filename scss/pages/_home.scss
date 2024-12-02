@@ -11,9 +11,9 @@ main {
     margin-top: 9rem;
     gap: 7rem;
     margin-left: 10rem;
-    padding-bottom: 3rem;
+    padding-bottom: 3rem; 
     @include response(laptop) {
-      gap: 6rem;
+      gap: 6rem; 
     }
     @include response(s-laptop) {
       margin-top: 8rem;

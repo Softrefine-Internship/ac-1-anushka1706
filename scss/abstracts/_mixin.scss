@@ -23,8 +23,8 @@
   .add-div-2 {
     transform: translateY(-90%);
   }
-  &:hover {
-    cursor: pointer;
+  &:hover {  
+    cursor: pointer;   
     background-color: rgba($color, 0.6);
   }
 }

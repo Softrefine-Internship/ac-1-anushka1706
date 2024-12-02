@@ -2,11 +2,8 @@
   overflow-y: scroll;
   height: 55.5vh;
   padding-left: 7rem;
-  padding-right: 7rem;
+  padding-right: 7rem; 
   @include response(laptop) {
-    height: 45vh;
-  }
-  @include response(s-laptop) {
     padding: 4rem 5rem;
     padding-bottom: 1rem;
   }
@@ -38,7 +35,7 @@
   row-gap: 7rem;
   @include response(laptop) {
     column-gap: 6rem;
-    row-gap: 6rem;
+    row-gap: 6rem;      
   }
   @include response(tab-port) {
     grid-template-columns: 1fr;
