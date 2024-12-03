@@ -1,5 +1,5 @@
-.search {
-  width: 45rem;
+.search {  
+  width: 43rem;
   height: 3.5rem;
   margin-right: 16rem;
   position: relative;
@@ -9,24 +9,32 @@
   justify-content: center;
   @include response(s-2-tab-port) {
     margin-right: 0;
-    width: 30rem;
-  }
-  @include response(s-phone) {
-    width: 25rem;
-    gap: 0rem;
-  }
-  @include response(laptop) {
+  }  
+  @include response(laptop) {   
     margin-right: 0rem;
   }
+  @include response(l-laptop) {
+    margin-right: 0rem;
+    transform: translateX(-20%); 
+  }
   @include response(s-laptop) {
-   transform: translateX(-90px);    
-  }
-  @include response(s-4-phone) {
-    width: 19rem;
-  }
+    transform: translateX(-90px);
+  }               
   @include response(tab-port) {
-    transform: translateX(0px);
+    transform: translateX(-20%);       
+  }   
+  @include response(s-tab-port) {
+    transform: translateX(-2%);    
   }
+  @include response(s-tab-3-port){   
+    width: 25rem;
+  }   
+  @include response(s-4-phone) {      
+    width: 20rem;                                       
+  }
+  @include response(s-5-phone) {      
+    width: 15rem;                                       
+  }         
   &__input {
     width: 90%;
     background-color: $white;
@@ -41,29 +49,27 @@
     }
     &::-webkit-input-placeholder {
       color: $light-grey;
-      transform: translateX(5%); 
+      transform: translateX(5%);
       text-align: left;
       text-transform: capitalize;
-      @include response(s-phone) { 
+      @include response(s-phone) {
         font-size: 1.5rem;
       }
-      @include response( s-tab-3-port) {
-        transform: translateX(10%); 
+      @include response(s-tab-3-port) {
+        transform: translateX(10%);
       }
-      @include response( s-2-tab-port) { 
-        transform: translateX(10%);    
+      @include response(s-2-tab-port) {
+        transform: translateX(10%);
       }
     }
     &:not(:placeholder-shown) + .search-icon {
       opacity: 0;
     }
     &:focus {
-      width: 100%;
       outline: 3px solid $violet-light;
       padding-left: 3rem;
       padding-right: 1rem;
       @include response(s-3-phone) {
-        width: 90%;
         outline: none;
       }
       &::-webkit-input-placeholder {

@@ -1,21 +1,38 @@
 .progress-domain {
-  overflow-y: scroll;
-  height: 55.5vh;
   padding-left: 7rem;
-  padding-right: 7rem; 
+  padding-right: 7rem;
   @include response(laptop) {
-    padding: 4rem 5rem;
-    padding-bottom: 1rem;
+    gap: 0rem;
+  }
+  @include response(s-laptop) {
+    gap: 0rem;
+    height: 82%;
   }
   @include response(s-2-tab-port) {
     padding-right: 5rem;
+    height: 85%;  
   }
   @include response(s-4-phone) {
-    padding: 2rem 4rem;
+    padding: 0rem 4rem;
+    padding-top: 0rem;
   }
   @include response(s-5-phone) {
-    padding: 2rem 2rem;
+    padding: 1rem 2rem;
   }
+  @include response(l-laptop) {
+    gap: 5rem;
+    padding: 5rem;
+  }
+  @include response(phone) {
+    padding-bottom: 1rem;
+  }
+  @include response(s-3-phone) {
+    padding-bottom: 1rem;
+    }
+  @include response(tab-port) {
+    height: 77%;
+  }
+  overflow-y: scroll;
   &::-webkit-scrollbar {
     @include response(phone) {
       width: 5px;
@@ -31,16 +48,18 @@
   }
   padding-top: 4rem;
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  height: 73%;
   column-gap: 7rem;
   row-gap: 7rem;
   @include response(laptop) {
-    column-gap: 6rem;
-    row-gap: 6rem;      
+    column-gap: 5rem;
+    row-gap: 5rem;
   }
   @include response(tab-port) {
     grid-template-columns: 1fr;
   }
-  grid-template-columns: repeat(2, 1fr);
   &__cards {
     padding-bottom: 2rem;
     position: relative;
@@ -128,14 +147,17 @@
 }
 .card-users {
   display: flex;
-  padding: 0rem 3rem;
+  padding: 0rem 1rem;
   padding-top: 2rem;
   justify-content: space-between;
   gap: 1rem;
-  flex-wrap: wrap;
   margin-top: 1rem;
+  @include response(l-laptop) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   @include response(laptop) {
-    justify-content: center;
+    // justify-content: center;
     padding-top: 1rem;
     padding-bottom: 0.2rem;
   }
@@ -182,41 +204,68 @@
     @include add-button($progress-blue, $white, 3rem);
   }
   .time-left {
-    background-color: $light-blue; 
+    background-color: $light-blue;
   }
-  box-shadow: 0px 0px 300px rgba(197, 196, 196, 0.293)
-} 
+  box-shadow: 0px 0px 300px rgba(197, 196, 196, 0.293);
+  .stack {
+    opacity: 0;
+    transition: opacity 0.4s;
+    @include stack($progress-blue);
+  }
+  &:hover {
+    cursor: pointer;
+    .stack {
+      opacity: 1;
+    }
+  }
+}
 .card-shopping {
-  .add-btn {
-    @include add-button($progress-orange, $white, 3rem); 
+  .stack {
+    opacity: 0;
+    transition: opacity 0.4s;
+    @include stack($shopping);
   }
-}    
+  &:hover {
+    cursor: pointer;
+    .stack {
+      opacity: 1;
+    }
+  }
+  .add-btn {
+    @include add-button($progress-orange, $white, 3rem);
+  }
+}
 .card-medical {
+  .stack {
+    opacity: 0;
+    transition: opacity 0.4s;
+    @include stack($medical);
+  }
+  &:hover {
+    cursor: pointer;
+    .stack {
+      opacity: 1;
+    }
+  }
   .add-btn {
     @include add-button($progress-green, $white, 3rem);
   }
 }
 .card-wireframing {
+  .stack {
+    opacity: 0;
+    transition: opacity 0.4s;
+    @include stack($wireframing);
+  }
+  &:hover {
+    cursor: pointer;
+    .stack {
+      opacity: 1;
+    }
+  }
   .add-btn {
     @include add-button($progress-pink, $white, 3rem);
   }
-}
-.card-stack {
-  position: absolute;
-  display: block;
-  background-color: $shopping;
-  height: 0.5rem;
-  border-radius: 10px;
-}
-.stack-2 {
-  width: 65%;
-  bottom: -9%;
-  left: 19%;
-}
-.stack-1 {
-  width: 75%;
-  bottom: -5%;
-  left: 14%;
 }
 .card-prototyping {
   @include cards($white);

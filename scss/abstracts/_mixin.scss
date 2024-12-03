@@ -1,6 +1,27 @@
 @mixin cards($color) {
   background-color: $color;
-  border-radius: 40px;    
+  border-radius: 40px;
+  @include response(phone) {
+    border-radius: 25px;
+  }
+}
+@mixin stack($color) {
+  .card-stack {
+    position: absolute;
+    background-color: $color;
+    height: 0.5rem;
+    border-radius: 10px;
+  }
+  .stack-2 {
+    width: 65%;
+    bottom: -9%;
+    left: 19%;
+  }
+  .stack-1 {
+    width: 75%;
+    bottom: -5%;
+    left: 14%;
+  }
 }
 @mixin add-button($color, $stroke-color, $height) {
   background-color: $color;
@@ -23,8 +44,8 @@
   .add-div-2 {
     transform: translateY(-90%);
   }
-  &:hover {  
-    cursor: pointer;   
+  &:hover {
+    cursor: pointer;
     background-color: rgba($color, 0.6);
   }
 }
@@ -85,6 +106,11 @@
     @media (max-width: 760px) {
       @content;
     }
+  }
+  @if $device == large {
+    @media (min-width: 1450px) {
+      @content;
+    }
   } @else if $device == s-phone {
     @media (max-width: 650px) {
       @content;
@@ -127,6 +153,10 @@
     }
   } @else if $device == s-laptop {
     @media (max-width: 1270px) {
+      @content;
+    }
+  } @else if $device == l-laptop {
+    @media (max-width: 1400px) {
       @content;
     }
   }

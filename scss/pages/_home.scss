@@ -1,6 +1,7 @@
 main {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-template-rows: 100vh;
   @include response(s-tab-port) {
     grid-template-columns: 1fr;
   }
@@ -8,12 +9,11 @@ main {
     background-color: $white;
     margin-left: 8rem;
     border-radius: 50px;
-    margin-top: 9rem;
+    margin-top: 9rem;   
     gap: 7rem;
     margin-left: 10rem;
-    padding-bottom: 3rem; 
     @include response(laptop) {
-      gap: 6rem; 
+      gap: 6rem;
     }
     @include response(s-laptop) {
       margin-top: 8rem;
@@ -58,7 +58,7 @@ main {
         padding-right: 5rem;
       }
       @include response(s-4-phone) {
-        padding: 2rem 4rem;
+        padding: 3rem 4rem;
       }
       @include response(s-5-phone) {
         padding: 2rem 2rem;

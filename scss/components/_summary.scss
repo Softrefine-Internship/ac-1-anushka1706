@@ -1,13 +1,14 @@
 .summary {
-  margin-top: 4rem;  
+  margin-top: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-left: 7rem;
   padding-right: 7rem;
+  padding-bottom: 1rem;
   @include response(tab-port) {
     margin-top: 3.5rem;
-  }  
+  }
   @include response(s-laptop) {
     padding: 0rem 5rem;
     padding-bottom: 1rem;
@@ -15,8 +16,9 @@
   @include response(s-2-tab-port) {
     padding-right: 5rem;
   }
-  @include response(s-4-phone) {  
-    padding: 2rem 4rem;
+  @include response(s-4-phone) {
+    padding: 1rem 4rem;                                            
+    margin-top: 0rem;
   }
   @include response(s-5-phone) {
     padding: 2rem 2rem;
@@ -37,39 +39,39 @@
         cursor: pointer;
       }
     }
-  }
+  } 
   &__info {
-    display: flex;
-    gap: 3rem;
+    display: flex;   
+    gap: 5rem; 
     justify-content: space-between;
-    @include response(s-2-tab-port) {
-      gap: 3rem;
-    }
     @include response(laptop) {
-      gap: 2rem;
+      gap: 3.8rem;
     }
     @include response(s-laptop) {
-      gap: 2rem;
-    }
+      gap: 5.5rem;    
+    }    
     @include response(s-tab-port) {
-      gap: 5rem;
+      gap: 12rem;                              
+    }
+    @include response(s-2-tab-port) {
+      gap: 7rem;
     }
     @include response(s-tab-3-port) {
-      gap: 3rem;   
+      gap: 7rem; 
     }
     @include response(phone) {
-      gap: 2rem;
+      gap: 8rem;  
     }
-    @include response(s-2-phone) {
-      gap: 3rem;
-    }
-    @include response(s-3-phone) {
-      gap: 2rem;
+    @include response(s-phone) {
+      gap: 5rem;          
     }
     @include response(s-4-phone) {
-      gap: 1rem;
+      gap: 4rem;   
     }
-    &__state { 
+    @include response(s-5-phone) {
+      gap: 3rem;
+    }
+    &__state {     
       .number {
         display: block;
         margin-bottom: 0.3rem;
@@ -79,18 +81,50 @@
       }
       .status {
         text-transform: capitalize;
-        color: $dark-grey-2;
-        font-weight: 450;
+        color: $medium-grey;
+        font-weight: 500; 
       }
     }
-    .dot-unfilled {
-      height: 0.5rem;
-      width: 0.5rem;
-      border-radius: 50%;
-      border: 1px solid black;
-      display: block;
-      align-self: flex-end;
-      margin-bottom: 0.6rem;
+    > *:not(:last-child) {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        height: 0.5rem;
+        width: 0.5rem;
+        top: 75%;
+        right: -30%;
+        border-radius: 50%;
+        border: 1px solid black;
+        display: block;
+        align-self: flex-end;
+        margin-bottom: 0.6rem;
+        @include response(laptop) {
+         right: -25%; 
+        } 
+        @include response(s-laptop) {
+          right: -33%;  
+         } 
+         @include response(s-tab-port) {
+          right: -70%;  
+         } 
+         @include response(s-2-tab-port) {
+          right: -45%;    
+         } 
+         @include response(s-tab-3-port) {
+          right: -43%;    
+         } 
+         @include response(s-phone) {
+          right: -35%;     
+         } 
+         @include response(s-4-phone) {
+          right: -28%;           
+         }   
+         @include response(s-5-phone) {
+          right: -22%;           
+         }   
+      }
     }
   }
 }
+   
