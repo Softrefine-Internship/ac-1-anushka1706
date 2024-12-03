@@ -10,7 +10,7 @@
   }
   @include response(s-2-tab-port) {
     padding-right: 5rem;
-    height: 85%;  
+    height: 85%;     
   }
   @include response(s-4-phone) {
     padding: 0rem 4rem;
@@ -22,15 +22,20 @@
   @include response(l-laptop) {
     gap: 5rem;
     padding: 5rem;
+  }     
+  @include response(tab-port) {
+    height: 82%; 
   }
   @include response(phone) {
     padding-bottom: 1rem;
+    height: 85%;
+  }  
+  @include response(s-phone){
+    height: 87%;
   }
   @include response(s-3-phone) {
     padding-bottom: 1rem;
-    }
-  @include response(tab-port) {
-    height: 77%;
+    height: 90%;
   }
   overflow-y: scroll;
   &::-webkit-scrollbar {
