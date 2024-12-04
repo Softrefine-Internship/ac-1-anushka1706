@@ -7,18 +7,20 @@ main {
   }
   .dashboard-content {
     background-color: $white;
+    display: flex;
+    flex-direction: column;  
     margin-left: 8rem;
     border-radius: 50px;
     margin-top: 9rem;   
-    gap: 7rem;
+    gap: 5rem;       
     margin-left: 10rem;
     @include response(laptop) {
-      gap: 6rem;
+      gap: 3rem;
     }
     @include response(s-laptop) {
       margin-top: 8rem;
-      gap: 5rem;
-    }
+      gap: 1rem;   
+    } 
     @include response(tab-port) {
       margin-top: 6.5rem;
     }
@@ -33,13 +35,13 @@ main {
     }
     @include response(s-3-phone) {
       margin-left: 10rem;
-      border-radius: 30px;
+      border-radius: 20px;
     }
     @include response(s-4-phone) {
-      gap: 5rem;
+      // gap: 5rem;
     }
     @include response(s-5-phone) {
-      gap: 2rem;
+      // gap: 2rem;
     }
     .dashboard-heading {
       display: flex;
@@ -68,11 +70,13 @@ main {
   .client-section {
     padding-top: 3rem;
     margin-top: 10.8rem;
+    display: flex;
+    flex-direction: column;
     @include response(s-laptop) {
       margin-top: 8rem;
     }
     @include response(tab-port) {
-      margin-top: 6.5rem;
+      margin-top: 6.5rem;      
     }
     @include response(s-tab-port) {
       margin-top: 2rem;

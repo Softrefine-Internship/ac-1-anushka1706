@@ -1,11 +1,11 @@
 .summary {
-  margin-top: 4rem;
+  // margin-top: 4rem;  
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-left: 7rem;
   padding-right: 7rem;
-  padding-bottom: 1rem;
+  // padding-bottom: 1rem; 
   @include response(tab-port) {
     margin-top: 3.5rem;
   }
