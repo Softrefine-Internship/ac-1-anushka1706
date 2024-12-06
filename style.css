@@ -227,7 +227,7 @@ body {
       cursor: pointer;
       background-color: #ffffff; }
   .navigation__links {
-    margin-top: 9rem;
+    margin-top: 7rem;
     display: flex;
     align-self: center;
     flex-direction: column;
@@ -237,12 +237,10 @@ body {
         gap: 2.5rem; } }
     @media (max-width: 760px) {
       .navigation__links {
-        gap: 2.5rem;
-        margin-top: 6rem; } }
+        gap: 2.5rem; } }
     @media (max-width: 450px) {
       .navigation__links {
-        gap: 0rem;
-        margin-top: 4rem; } }
+        gap: 0rem; } }
     .navigation__links__li {
       display: flex;
       justify-content: center;

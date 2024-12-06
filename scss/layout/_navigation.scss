@@ -42,7 +42,7 @@
   background-color: $bg-primary;
   height: 100vh;
   &__links {
-    margin-top: 9rem;
+    margin-top: 7rem; 
     display: flex;
     align-self: center;
     flex-direction: column;
@@ -54,14 +54,14 @@
       // gap:1rem;
     }
     @include response(s-tab-port) {
-    }
+    }  
     @include response(phone) {
       gap: 2.5rem;
-      margin-top: 6rem;
+      // margin-top: 8rem;
     }
     @include response(s-4-phone) {
       gap: 0rem;
-      margin-top: 4rem;
+      // margin-top: 4rem;
     }
     &__li {
       display: flex;
@@ -101,5 +101,5 @@
         }
       }
     }
-  }
+  }        
 }
