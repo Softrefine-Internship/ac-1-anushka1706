@@ -455,6 +455,7 @@ body {
   padding-bottom: 4rem;
   padding-right: 5rem;
   flex-grow: 1;
+  padding-top: 1rem;
   overflow-y: scroll;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
