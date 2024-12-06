@@ -1,5 +1,5 @@
 .header {
-  padding: 2rem;
+  padding: 2.3rem;
   grid-column: 2/-1;
   display: flex;
   justify-content: space-between;
@@ -11,16 +11,10 @@
     gap: 0rem; 
   }                   
   .logo-name {   
-    margin-left: 3rem;
+    // margin-left: 3rem;
     color: #050505; 
-    @include response(phone) {
-      margin-left: 4rem;
-    }
-    @include response(s-4-phone) {
-      margin-left: 2rem;   
-    }
-    @include response(s-5-phone) {
-      margin-left: 1rem;   
-    }
+    // @include response(phone) {
+    //   margin-left: 4rem;
+    // }
   }  
 }

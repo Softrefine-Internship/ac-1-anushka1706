@@ -58,7 +58,7 @@ body {
   .client-heading__actions {
     display: flex;
     align-items: center;
-    gap: 2.5rem; }
+    gap: 1.5rem; }
     .client-heading__actions__dot:hover {
       cursor: pointer; }
     .client-heading__actions__dot .client-dots {
@@ -179,7 +179,7 @@ body {
   font-weight: 800; }
 
 .header {
-  padding: 2rem;
+  padding: 2.3rem;
   grid-column: 2/-1;
   display: flex;
   justify-content: space-between;
@@ -191,17 +191,7 @@ body {
     .header {
       gap: 0rem; } }
   .header .logo-name {
-    margin-left: 3rem;
     color: #050505; }
-    @media (max-width: 760px) {
-      .header .logo-name {
-        margin-left: 4rem; } }
-    @media (max-width: 450px) {
-      .header .logo-name {
-        margin-left: 2rem; } }
-    @media (max-width: 370px) {
-      .header .logo-name {
-        margin-left: 1rem; } }
 
 .navigation {
   padding: 2rem;
@@ -217,7 +207,7 @@ body {
       padding: 1.5rem; } }
   .navigation__drop {
     align-self: center;
-    padding-top: 1rem;
+    margin-top: 2rem;
     text-align: center; }
     .navigation__drop__checkbox {
       display: none; }
@@ -287,10 +277,13 @@ body {
   display: flex;
   align-self: end;
   align-items: center;
-  gap: 2rem; }
+  gap: 1.3rem; }
   @media (max-width: 1270px) {
     .top__options {
       gap: 1rem; } }
+  @media (max-width: 450px) {
+    .top__options {
+      gap: 0.7rem; } }
   .top__options .top-user-img {
     height: 4.5rem;
     width: 4.5rem;
@@ -337,7 +330,7 @@ body {
     padding-left: 2rem;
     display: flex;
     align-items: center;
-    gap: 2.5rem; }
+    gap: 1rem; }
     @media (max-width: 1270px) {
       .top__options__user {
         gap: 0.5rem; } }
@@ -869,15 +862,12 @@ body {
   @media (max-width: 1111px) {
     .search {
       transform: translateX(-2%); } }
-  @media (max-width: 860px) {
+  @media (max-width: 650px) {
     .search {
-      width: 25rem; } }
+      width: 23rem; } }
   @media (max-width: 450px) {
     .search {
-      width: 20rem; } }
-  @media (max-width: 370px) {
-    .search {
-      width: 15rem; } }
+      width: 16rem; } }
   .search__input {
     width: 90%;
     background-color: #ffffff;

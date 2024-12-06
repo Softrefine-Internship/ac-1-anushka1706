@@ -22,14 +22,11 @@
   @include response(s-tab-port) {
     transform: translateX(-2%);
   }
-  @include response(s-tab-3-port) {
-    width: 25rem;
+  @include response(s-phone) {
+    width: 23rem;
   }
   @include response(s-4-phone) {
-    width: 20rem;
-  }
-  @include response(s-5-phone) {
-    width: 15rem;
+    width: 16rem;  
   }
   &__input {
     width: 90%;
