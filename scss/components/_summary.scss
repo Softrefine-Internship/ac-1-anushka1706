@@ -3,25 +3,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 7rem;
-  padding-right: 7rem;
-  // padding-bottom: 1rem; 
-  @include response(tab-port) {
-    margin-top: 3.5rem;
-  }
+  padding-left: 5rem;
+  padding-right: 5rem;
   @include response(s-laptop) {
     padding: 0rem 5rem;
     padding-bottom: 1rem;
   }
   @include response(s-2-tab-port) {
-    padding-right: 5rem;
+    padding-right: 5rem;  
   }
   @include response(s-4-phone) {
     padding: 1rem 4rem;                                            
-    margin-top: 0rem;
   }
   @include response(s-5-phone) {
-    padding: 2rem 2rem;
+    padding: 1rem 3rem;
   }
   &__options {
     display: flex;
@@ -48,7 +43,7 @@
       gap: 3.8rem;
     }
     @include response(s-laptop) {
-      gap: 5.5rem;    
+      gap: 4rem;    
     }    
     @include response(s-tab-port) {
       gap: 12rem;                              
@@ -56,20 +51,17 @@
     @include response(s-2-tab-port) {
       gap: 7rem;
     }
-    @include response(s-tab-3-port) {
-      gap: 7rem; 
-    }
+    // @include response(s-tab-3-port) {
+    //   gap: 7rem; 
+    // }
     @include response(phone) {
       gap: 8rem;  
     }
     @include response(s-phone) {
-      gap: 5rem;          
+      gap: 5rem;                         
     }
     @include response(s-4-phone) {
-      gap: 4rem;   
-    }
-    @include response(s-5-phone) {
-      gap: 3rem;
+      gap: 2rem;   
     }
     &__state {     
       .number {
@@ -114,14 +106,17 @@
          @include response(s-tab-3-port) {
           right: -43%;    
          } 
-         @include response(s-phone) {
-          right: -35%;     
+         @include response(phone) {
+          right: -52%;        
          } 
-         @include response(s-4-phone) {
-          right: -28%;           
+         @include response(s-phone) {
+          right: -32%;        
+         } 
+         @include response(s-3-phone) {
+          right: -31%;                 
          }   
-         @include response(s-5-phone) {
-          right: -22%;           
+         @include response(s-4-phone) {
+          right: -15%;            
          }   
       }
     }

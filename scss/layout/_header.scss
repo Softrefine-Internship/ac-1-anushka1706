@@ -1,33 +1,26 @@
 .header {
   padding: 2rem;
+  grid-column: 2/-1;
   display: flex;
   justify-content: space-between;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   gap: 5rem;
   text-transform: capitalize;
-  align-items: center;
-  z-index: 1000;
-  height: auto;
-  background-color: $bg-primary;
-  @include response(s-laptop) {
-    padding: 1.5rem;
-  }
-  @include response(tab-port) {
-    padding: 0.85rem;
-  }
+  align-items: center;    
+  background-color: $bg-primary;  
   @include response(s-tab-port) {
-    gap: 0rem;
-  }
-  .logo-name {
-    margin-left: 15rem;
+    gap: 0rem; 
+  }                   
+  .logo-name {   
+    margin-left: 3rem;
+    color: #050505; 
+    @include response(phone) {
+      margin-left: 4rem;
+    }
     @include response(s-4-phone) {
-      margin-left: 11rem;
+      margin-left: 2rem;   
     }
     @include response(s-5-phone) {
-      margin-left: 9.8rem;
+      margin-left: 1rem;   
     }
-  }
+  }  
 }

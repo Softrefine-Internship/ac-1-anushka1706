@@ -5,6 +5,7 @@
 }
 html {
   font-size: 62.5%;
+  height: 100vh;
   @include response(tab-port) {
     font-size: 45.7%;
   }
@@ -20,8 +21,12 @@ html {
   @include response(s-3-phone) {
     font-size: 31%;
   }
-  body {
-    font-family: "DM Sans";
-    background-color: $bg-primary;
-  }
+}
+body {
+  height: 100vh;
+  font-family: "DM Sans";
+  background-color: $bg-primary;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: min-content minmax(0, 1fr);
 }

@@ -1,6 +1,7 @@
 .progress-domain {
-  padding-left: 7rem;
-  padding-right: 7rem;
+  padding-left: 5rem;
+  padding-bottom: 4rem;
+  padding-right: 5rem;
   flex-grow: 1;
   @include response(laptop) {
     gap: 0rem;
@@ -50,10 +51,10 @@
   }
   &::-webkit-scrollbar-thumb {
     background-color: $light-grey-1;
-    border-radius: 4px;
+    border-radius: 4px; 
   }
   // padding-top: 4rem;
-  display: grid; 
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   // height: 73%;
@@ -71,7 +72,7 @@
     position: relative;
     .card-top {
       display: flex;
-      padding: 3rem 3rem 0rem 3rem;
+      padding: 3rem;
       justify-content: space-between;
       @include response(s-tab-3-port) {
         padding-right: 4rem;
@@ -100,9 +101,8 @@
       }
     }
   }
-}
+} 
 .card-details {
-  margin-top: 3rem;
   text-align: center;
   &__progress {
     text-align: start;
@@ -153,7 +153,8 @@
 }
 .card-users {
   display: flex;
-  padding: 0rem 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   padding-top: 2rem;
   justify-content: space-between;
   gap: 1rem;
@@ -212,7 +213,7 @@
   .time-left {
     background-color: $light-blue;
   }
-  box-shadow: 0px 0px 300px rgba(197, 196, 196, 0.293);
+  box-shadow: 0px 20px 100px rgba(197, 196, 196, 0.373);
   .stack {
     opacity: 0;
     transition: opacity 0.4s;

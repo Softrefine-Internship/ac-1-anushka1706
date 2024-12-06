@@ -1,55 +1,28 @@
 main {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 100vh;
+  grid-template-columns: 60% 1fr;
+  grid-column: 2/-1;
+  grid-template-rows: 100%;
   @include response(s-tab-port) {
     grid-template-columns: 1fr;
   }
   .dashboard-content {
     background-color: $white;
     display: flex;
-    flex-direction: column;  
-    margin-left: 8rem;
+    flex-direction: column;
     border-radius: 50px;
-    margin-top: 9rem;   
-    gap: 5rem;       
-    margin-left: 10rem;
-    @include response(laptop) {
-      gap: 3rem;
-    }
-    @include response(s-laptop) {
-      margin-top: 8rem;
-      gap: 1rem;   
-    } 
-    @include response(tab-port) {
-      margin-top: 6.5rem;
-    }
-    @include response(s-tab-port) {
-      margin-top: 7rem;
-    }
-    @include response(s-2-tab-port) {
-      margin-top: 6.5rem;
-    }
+    gap: 4rem;
     @include response(phone) {
-      margin-top: 7.7 rem;
-    }
-    @include response(s-3-phone) {
-      margin-left: 10rem;
       border-radius: 20px;
-    }
-    @include response(s-4-phone) {
-      // gap: 5rem;
-    }
-    @include response(s-5-phone) {
-      // gap: 2rem;
+      gap: 2rem;
     }
     .dashboard-heading {
       display: flex;
       justify-content: space-between;
       text-transform: capitalize;
-      padding-top: 5rem;
-      padding-left: 7rem;
-      padding-right: 7rem;
+      padding-top: 4rem;
+      padding-left: 5rem;
+      padding-right: 5rem;
       font-weight: 700;
       text-transform: capitalize;
       @include response(s-laptop) {
@@ -60,27 +33,16 @@ main {
         padding-right: 5rem;
       }
       @include response(s-4-phone) {
-        padding: 3rem 4rem;
-      }
-      @include response(s-5-phone) {
-        padding: 2rem 2rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
       }
     }
   }
   .client-section {
     padding-top: 3rem;
-    margin-top: 10.8rem;
     display: flex;
     flex-direction: column;
-    @include response(s-laptop) {
-      margin-top: 8rem;
-    }
-    @include response(tab-port) {
-      margin-top: 6.5rem;      
-    }
     @include response(s-tab-port) {
-      margin-top: 2rem;
-      margin-left: 10rem;
       padding-right: 2rem;
     }
   }

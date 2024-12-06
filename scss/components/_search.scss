@@ -1,56 +1,51 @@
-.search {  
-  width: 43rem;
+.search {
+  width: 45rem;    
   height: 3.5rem;
-  margin-right: 16rem;
+  transform: translateX(-100px);
   position: relative;
   align-items: center;
   display: flex;
   border-radius: 120px;
   justify-content: center;
   @include response(s-2-tab-port) {
-    margin-right: 0;
-  }  
-  @include response(laptop) {   
-    margin-right: 0rem;
+    width: 35rem;
   }
   @include response(l-laptop) {
-    margin-right: 0rem;
-    transform: translateX(-20%); 
+    transform: translateX(-20%);
   }
   @include response(s-laptop) {
     transform: translateX(-90px);
-  }               
+  }
   @include response(tab-port) {
-    transform: translateX(-20%);       
-  }   
+    transform: translateX(-20%);
+  }
   @include response(s-tab-port) {
-    transform: translateX(-2%);    
+    transform: translateX(-2%);
   }
-  @include response(s-tab-3-port){   
+  @include response(s-tab-3-port) {
     width: 25rem;
-  }   
-  @include response(s-4-phone) {      
-    width: 20rem;                                       
   }
-  @include response(s-5-phone) {      
-    width: 15rem;                                       
-  }         
+  @include response(s-4-phone) {
+    width: 20rem;
+  }
+  @include response(s-5-phone) {
+    width: 15rem;
+  }
   &__input {
     width: 90%;
     background-color: $white;
     border-radius: 120px;
-    padding-left: 3rem;
+    padding-left: 4rem;
     border: none;
     align-self: center;
     height: 4.5rem;
-    transition: width 0.5s;
     @include response(s-2-tab-port) {
       padding-left: 1.5rem;
     }
     &::-webkit-input-placeholder {
       color: $light-grey;
-      transform: translateX(5%);
       text-align: left;
+      transform: translateX(3%);
       text-transform: capitalize;
       @include response(s-phone) {
         font-size: 1.5rem;
@@ -62,22 +57,12 @@
         transform: translateX(10%);
       }
     }
-    &:not(:placeholder-shown) + .search-icon {
-      opacity: 0;
-    }
     &:focus {
       outline: 3px solid $violet-light;
-      padding-left: 3rem;
       padding-right: 1rem;
       @include response(s-3-phone) {
         outline: none;
       }
-      &::-webkit-input-placeholder {
-        transform: translateX(0%);
-      }
-    }
-    &:focus + .search-icon {
-      opacity: 0;
     }
   }
   .search-icon {

@@ -1,17 +1,19 @@
 .navigation {
   padding: 2rem;
-  @include response(s-4-phone) { 
+  display: flex;
+  align-items: center;
+  flex-direction: column;    
+  grid-row: 1/-1;
+  grid-column: 1/2;
+  @include response(s-4-phone) {
     padding: 1.5rem;
   }
   &__drop {
     // border: 1px solid black;
     align-self: center;
-    margin-left: 1.4rem;                         
+    // margin-left: 1.4rem;
     padding-top: 1rem;
     text-align: center;
-    @include response(s-4-phone) {
-      margin-left: 1.5rem;
-    }
     &__checkbox {
       display: none;
     }
@@ -39,32 +41,28 @@
   }
   background-color: $bg-primary;
   height: 100vh;
-  width: 10rem;
-  position: fixed;
-  top: 0;
-  left: 0;
   &__links {
-    margin-top: 7rem;
+    margin-top: 9rem;
     display: flex;
     align-self: center;
     flex-direction: column;
     gap: 2rem;
     @include response(s-laptop) {
-      margin-top: 5rem; 
-      gap:3.5rem;  
-    } 
+      gap: 2.5rem;
+    }
     @include response(tab-port) {
-      margin-top: 3rem;
+      // gap:1rem;
     }
     @include response(s-tab-port) {
-      margin-top: 3rem;
     }
     @include response(phone) {
-      gap: 2.5rem;  
-    }   
-    @include response( s-4-phone ){
-      gap:0rem;     
-    }   
+      gap: 2.5rem;
+      margin-top: 6rem;
+    }
+    @include response(s-4-phone) {
+      gap: 0rem;
+      margin-top: 4rem;
+    }
     &__li {
       display: flex;
       justify-content: center;
