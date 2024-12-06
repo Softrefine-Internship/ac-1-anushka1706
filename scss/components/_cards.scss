@@ -24,7 +24,6 @@
   }
   @include response(l-laptop) {
     gap: 5rem;
-    padding: 5rem;
   }
   @include response(tab-port) {
     // height: 82%;

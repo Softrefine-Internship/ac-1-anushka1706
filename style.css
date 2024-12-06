@@ -480,8 +480,7 @@ body {
       padding: 1rem 2rem; } }
   @media (max-width: 1400px) {
     .progress-domain {
-      gap: 5rem;
-      padding: 5rem; } }
+      gap: 5rem; } }
   @media (max-width: 760px) {
     .progress-domain {
       padding-bottom: 1rem; } }
