@@ -7,7 +7,7 @@
   grid-column: 1/2;
   transform: translateX(0%);
   position: fixed; 
-  transition: transform 0.5s ease;
+  transition: transform 0.5s ease;  
   top: calc(15vh + 2rem);
   width: 11rem; 
   transform: translateX(0%);    
@@ -107,20 +107,6 @@
   &:hover {
     cursor: pointer;
   }
-  // &::after{
-  //   content: '\2716';
-  //   height: 100%;
-  //   position: absolute;
-  //   left: -10%;
-  //   top:-10%;
-  //   font-size: 2rem;
-  //   width: 100%;
-  //   opacity: 0;
-  //   padding: 0.5rem;
-  //   text-align: center;
-  //   background-color: white;
-  //   border-radius: 50px;
-  // }
 }
 .drop-label {
   grid-template-columns: 1/2;
@@ -134,22 +120,4 @@
 }
 .drop-checkbox:checked ~ .navigation {
   transform: translateX(-150%);
-}
-// .drop-checkbox ~ .drop-label {
-//   .outline-2 {
-//     display: none;
-//   }
-//   .outline-1 {
-//     width: 3rem;
-//     transform: rotate(45deg) translateY(5px);
-//   }
-//   .outline-3 {
-//     width: 3rem;
-//     transform: rotate(-45deg) translateY(-5px);
-//   }
-// }
-.drop-checkbox:checked ~ main {
-  grid-column: 1/-1;
-  grid-row: 2/-1;
-  padding-left: 3rem;  
-}
+}  

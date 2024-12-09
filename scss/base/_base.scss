@@ -27,7 +27,7 @@ body {
   font-family: "DM Sans";
   background-color: $bg-primary;
   display: grid;
-  grid-template-columns:11rem 1fr;
+  grid-template-columns:11rem auto;
   transition: grid-column 0.5s ease;
   grid-template-rows: min-content minmax(0, 1fr);
 }
