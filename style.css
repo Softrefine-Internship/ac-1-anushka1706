@@ -209,7 +209,7 @@ body {
   grid-column: 1/2;
   transform: translateX(0%);
   position: fixed;
-  transition: transform 0.6s;
+  transition: transform 0.5s ease;
   top: calc(15vh + 2rem);
   width: 11rem;
   transform: translateX(0%);
@@ -303,8 +303,8 @@ body {
 
 .drop-checkbox:checked ~ main {
   grid-column: 1/-1;
-  padding-left: 3rem;
-  grid-row: 2/-1; }
+  grid-row: 2/-1;
+  padding-left: 3rem; }
 
 .top {
   width: max-content;
@@ -914,7 +914,7 @@ main {
   grid-template-columns: 60% 1fr;
   grid-column: 2/-1;
   grid-template-rows: 100%;
-  transition: grid-column 1s; }
+  transition: transform 0.5s; }
   @media (max-width: 1111px) {
     main {
       grid-template-columns: 1fr; } }
@@ -953,7 +953,8 @@ main {
     padding-top: 3rem;
     padding-bottom: 3rem;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    width: 100%; }
     @media (max-width: 1111px) {
       main .client-section {
         padding-right: 2rem; } }

@@ -3,7 +3,7 @@ main {
   grid-template-columns: 60% 1fr;
   grid-column: 2/-1; 
   grid-template-rows: 100%;    
-  transition: grid-column 1s;   
+  transition: transform 0.5s;   
   @include response(s-tab-port) {
     grid-template-columns: 1fr;
   }
@@ -45,6 +45,7 @@ main {
     padding-bottom: 3rem;
     display: flex;
     flex-direction: column;
+    width: 100%;
     @include response(s-tab-port) {
       padding-right: 2rem;
     }
