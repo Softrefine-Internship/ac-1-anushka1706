@@ -1,19 +1,20 @@
 .summary {
-  // margin-top: 4rem;  
+  // margin-top: 4rem;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   padding-left: 5rem;
   padding-right: 5rem;
   @include response(s-laptop) {
     padding: 0rem 5rem;
     padding-bottom: 1rem;
+    gap: 0rem;
   }
-  @include response(s-2-tab-port) {
-    padding-right: 5rem;  
-  }
+  // @include response(s-2-tab-port) {
+  //   padding-right: 5rem;
+  // }
   @include response(s-4-phone) {
-    padding: 1rem 4rem;                                            
+    padding: 1rem 4rem;
   }
   @include response(s-5-phone) {
     padding: 1rem 3rem;
@@ -34,36 +35,37 @@
         cursor: pointer;
       }
     }
-  } 
+  }
   &__info {
-    display: flex;   
-    gap: 5rem; 
+    display: flex;
+    gap: 4rem;
     justify-content: space-between;
-    @include response(laptop) {
-      gap: 3.8rem;
-    }
-    @include response(s-laptop) {
-      gap: 4rem;    
-    }    
-    @include response(s-tab-port) {
-      gap: 12rem;                              
-    }
-    @include response(s-2-tab-port) {
-      gap: 7rem;
-    }
-    // @include response(s-tab-3-port) {
-    //   gap: 7rem; 
+    // @include response(laptop) {
+    //   gap: 4rem;
     // }
-    @include response(phone) {
-      gap: 8rem;  
+    // @include response(s-laptop) {
+    //   gap: 5rem;
+    // }
+    // @include response(s-tab-port) {
+    //   gap: 12rem;
+    // }
+    // @include response(s-2-tab-port) {
+    //   gap: 7rem;
+    // }
+    // @include response(s-tab-3-port) {
+    //   gap: 7rem;
+    // }
+    @include response(s-2-phone) {
+      display: grid;
+      grid-template-columns: repeat(3, min-content);
+      column-gap: 7rem;
+      row-gap: 2rem;
     }
-    @include response(s-phone) {
-      gap: 5rem;                         
+    @include response(s-3-phone) {
+      column-gap: 8rem; 
     }
-    @include response(s-4-phone) {
-      gap: 2rem;   
-    }
-    &__state {     
+    &__state {
+      width: max-content;
       .number {
         display: block;
         margin-bottom: 0.3rem;
@@ -74,7 +76,7 @@
       .status {
         text-transform: capitalize;
         color: $medium-grey;
-        font-weight: 500; 
+        font-weight: 500;
       }
     }
     > *:not(:last-child) {
@@ -85,41 +87,34 @@
         height: 0.5rem;
         width: 0.5rem;
         top: 75%;
-        right: -30%;
+        // right: -30%;
         border-radius: 50%;
         border: 1px solid black;
         display: block;
         align-self: flex-end;
         margin-bottom: 0.6rem;
-        @include response(laptop) {
-         right: -25%; 
-        } 
-        @include response(s-laptop) {
-          right: -33%;  
-         } 
-         @include response(s-tab-port) {
-          right: -70%;  
-         } 
-         @include response(s-2-tab-port) {
-          right: -45%;    
-         } 
-         @include response(s-tab-3-port) {
-          right: -43%;    
-         } 
-         @include response(phone) {
-          right: -52%;        
-         } 
-         @include response(s-phone) {
-          right: -32%;        
-         } 
-         @include response(s-3-phone) {
-          right: -31%;                 
-         }   
-         @include response(s-4-phone) {
-          right: -15%;            
-         }   
+        left: calc(100% + 15px);
       }
+      @include response(phone) {
+        &::after {
+          left: calc(100% + 10px);
+        }
+      }
+      @include response(s-2-phone) {  
+        &::after {  
+          left: calc(100% + 19px);
+        }
+      }
+      @include response(s-3-phone) {
+        &::after {
+          left: calc(100% + 16px);  
+        } 
+      }
+      // @include response(s-2-phone) {
+      //   &::after {
+      //     left: calc(100% + 18px);
+      //   }
+      // }
     }
   }
 }
-   

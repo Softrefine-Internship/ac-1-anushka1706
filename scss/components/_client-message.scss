@@ -120,17 +120,17 @@
       .star-filled {
         display: block;
       }
-      @include response(s-tab-port) {
-        transform: none;
-        background-color: none;
-        border: none;
-        cursor: pointer;
-      }
       transform: translateX(-12px) scale(1.02);
       background-color: $white;
       border-radius: 20px;
       cursor: pointer;
       border-bottom: none;
+    }
+    @include response(s-tab-port) {
+      transform: none !important;
+      background-color: none;
+      border: none !important;
+      cursor: pointer;
     }
   }
 }

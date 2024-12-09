@@ -107,7 +107,7 @@
       @content;
     }
   }
-  @if $device == large {
+  @if $device == large {                       
     @media (min-width: 1450px) {
       @content;
     }

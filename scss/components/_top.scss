@@ -1,14 +1,20 @@
 .top {
-  &__options {
+  width: max-content;
+  grid-row: 1/2;
+  justify-self: end;
+  @include response(s-tab-port) {
+    grid-column: 2/4;
+  }
+  &__options {     
     display: flex;
     align-self: end;
     align-items: center;
     gap: 1.3rem;
     @include response(s-laptop) {
-      gap: 1rem;  
+      gap: 1rem;
     }
-    @include response(s-4-phone){
-      gap:0.7rem;
+    @include response(s-4-phone) {
+      gap: 0.7rem;
     }
     .top-user-img {
       height: 4.5rem;
@@ -40,7 +46,7 @@
     &__user {
       border-left: 1px solid $light-grey-1;
       padding-left: 2rem;
-      display: flex;  
+      display: flex;
       align-items: center;
       gap: 1rem;
       @include response(s-laptop) {

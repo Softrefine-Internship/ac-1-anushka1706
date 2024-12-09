@@ -40,19 +40,13 @@
         </div>
       </section>
     </header>
+    <input type="checkbox" class="drop-checkbox" id="nav-opts" />
+    <label class="drop-label" for="nav-opts">
+       <span class="drop-label__span outline-1"></span>
+      <span class="drop-label__span outline-2"></span>
+      <span class="drop-label__span outline-3"></span>
+    </label>
     <nav class="navigation">
-      <div class="navigation__drop">
-        <input
-          type="checkbox"
-          class="navigation__drop__checkbox"
-          id="nav-opts"
-        />
-        <label class="navigation__drop__label" for="nav-opts">
-          <span class="navigation__drop__label__span outline-1"></span>
-          <span class="navigation__drop__label__span outline-2"></span>
-          <span class="navigation__drop__label__span outline-3"></span>
-        </label>
-      </div>
       <ul class="navigation__links">
         <li class="navigation__links__li active-link">
           <a href="#" class="a_links active-link"
@@ -393,6 +387,58 @@
               <div class="time-left">
                 <span class="time-left__span time-prototype text-medium"
                   >2 days left</span
+                >
+              </div>
+            </div>
+            <div class="stack">
+              <span class="card-stack stack-1"></span>
+              <span class="card-stack stack-2"></span>
+            </div>
+          </div>
+          <div class="progress-domain__cards card-medical">
+            <div class="card-top">
+              <span class="card-top__time text-small">july 2,2020</span>
+              <div class="card-top__opts">
+                <span class="dots"></span>
+                <span class="dots"></span>
+              </div>
+            </div>
+            <div class="card-details">
+              <h4 class="card-details__name heading-medium">dashboard</h4>
+              <span class="card-details__category text-medium">medical</span>
+              <div class="card-details__progress">
+                <span class="bar-heading heading-medium">progress</span>
+                <progress
+                  class="progress-bar bar-medical"
+                  value="50"
+                  max="100"
+                ></progress>
+                <label class="progress-label heading-medium" for="progress-bar"
+                  >50%</label
+                >
+              </div>
+            </div>
+            <hr class="hr-white" />
+            <div class="card-users">
+              <div class="card-users__clients">
+                <img
+                  src="img/client-1.jpg"
+                  class="users-img"
+                  alt="web-designing-client"
+                />
+                <img
+                  src="img/client-2.jpg"
+                  class="users-img"
+                  alt="webdesigning-user"
+                />
+                <button class="add-btn">
+                  <div class="add-div add-div-1"></div>
+                  <div class="add-div add-div-2"></div>
+                </button>
+              </div>
+              <div class="time-left">
+                <span class="time-left__span time-medical text-medium"
+                  >2 weeks left</span
                 >
               </div>
             </div>
