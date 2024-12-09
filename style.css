@@ -269,7 +269,7 @@ body {
 .drop-label {
   height: 3rem;
   position: fixed;
-  top: 3rem;
+  top: 3.5rem;
   left: 4rem;
   z-index: 20;
   transition: opacity 0.5s; }
