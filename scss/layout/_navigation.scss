@@ -15,8 +15,8 @@
     padding: 1.5rem;
     top: calc(12vh + 1.5rem);
   }
-  @include response(s-3-phone) {
-    top: calc(10vh + 1.5rem);
+  @include response(s-3-phone) {         
+    top: calc(9vh + 1.5rem);
   }
   height: 87vh;
   &__links {

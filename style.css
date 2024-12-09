@@ -220,7 +220,7 @@ body {
       top: calc(12vh + 1.5rem); } }
   @media (max-width: 483px) {
     .navigation {
-      top: calc(10vh + 1.5rem); } }
+      top: calc(9vh + 1.5rem); } }
   .navigation__links {
     display: flex;
     align-self: center;
